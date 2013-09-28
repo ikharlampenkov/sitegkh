@@ -7,8 +7,8 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysql://dnevnik_gkxuser:e10adc39h@db.hosting.risp.ru:3606/dnevnik_gkh_kvartal';
-$__cfg['site.main.dir'] = '/home/dnevnik/';
+$__cfg['db.dsn'] = 'mysql://sibdnevnik_:e10adc39h@localhost:3306/sibdnevnik_kvartal';
+$__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = true;
 
@@ -30,7 +30,7 @@ $__cfg['smarty.default.keyword'] = '';
 //$__cfg['smarty.encoding'] = 'windows-1251';
 $__cfg['smarty.encoding'] = 'utf-8';
 
-$__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html/gkh/site_gkh';
+$__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html';
 $__cfg['site.url'] = 'http://квартал-премиум42.рф/';
 //квартал-премиум42.рф
 //xn---42-5cdakyymnnb9ake1az.xn--p1ai

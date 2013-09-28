@@ -7,8 +7,8 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysql://dnevnik_gkxuser:e10adc39h@db.hosting.risp.ru:3606/dnevnik_gkh_db';
-$__cfg['site.main.dir'] = '/home/dnevnik/';
+$__cfg['db.dsn'] = 'mysql://sibdnevnik_:e10adc39h@localhost:3306/sibdnevnik_db';
+$__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = true;
 

@@ -7,8 +7,8 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysql://dnevnik_gkxuser:e10adc39h@db.hosting.risp.ru:3606/dnevnik_gkh_center';
-$__cfg['site.main.dir'] = '/home/dnevnik/';
+$__cfg['db.dsn'] = 'mysql://sibdnevnik_:e10adc39h@localhost:3306/sibdnevnik_center';
+$__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = true;
 
@@ -30,13 +30,13 @@ $__cfg['smarty.default.keyword'] = '';
 //$__cfg['smarty.encoding'] = 'windows-1251';
 $__cfg['smarty.encoding'] = 'utf-8';
 
-$__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html/gkh/site_gkh';
+$__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html';
 $__cfg['site.url'] = 'http://центр-ук.рф/';
 
 $__cfg['temp.dir'] = $__cfg['site.main.dir'] . 'private/temp/';
 
 $__cfg['temp.support.dir'] = $__cfg['site.dir'] . '/temp_support/';
-$__cfg['temp.public.dir'] = $__cfg['site.dir'] . '/temp_files/';
+$__cfg['file.upload.dir'] = $__cfg['site.dir'] . '/temp_files/';
 $__cfg['file.upload.dir'] = $__cfg['site.dir'] . '/temp_files/';
 
 $__cfg['sms.login'] = 'sibdnevnik';

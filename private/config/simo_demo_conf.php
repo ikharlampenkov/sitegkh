@@ -7,8 +7,8 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysql://dnevnik:sib$78QAZ@db.hosting.risp.ru:3606/dnevnik_gkh_demo_db';
-$__cfg['site.main.dir'] = '/home/dnevnik/';
+$__cfg['db.dsn'] = 'mysql://dnevnik:sib$78QAZ@localhost:3306/sibdnevnik_demo_db';
+$__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = true;
 
@@ -36,7 +36,7 @@ $__cfg['site.url'] = 'http://рэу7.рф/';
 $__cfg['temp.dir'] = $__cfg['site.main.dir'] . 'private/temp/';
 
 $__cfg['temp.support.dir'] = $__cfg['site.dir'] . '/temp_support/';
-$__cfg['temp.public.dir'] = $__cfg['site.dir'] . '/temp_files/';
+$__cfg['file.upload.dir'] = $__cfg['site.dir'] . '/temp_files/';
 $__cfg['file.upload.dir'] = $__cfg['site.dir'] . '/temp_files/';
 
 $__cfg['sms.login'] = 'sibdnevnik';
