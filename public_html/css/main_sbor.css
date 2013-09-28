@@ -1,0 +1,274 @@
+.mainn {
+	cursor:hand;
+	height: 20px !important; 
+	margin-top: 5px;	
+	padding: 5px !important;
+}
+
+#nav { 
+    width:100px;
+    height:90px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+
+#nav li a, #nav li {
+    float: left;
+}
+
+#nav li { 
+    list-style: none;
+    position: relative;
+}
+
+#nav li a {
+    background-color: #006699;
+    /*  background-image: url("/images/bgmn.gif") ; */
+    background-repeat: no-repeat;
+    background-position: right; 
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+    font-size: 13px; 
+    vertical-align: middle;
+    text-align: right;
+}
+
+#nav li a:hover {
+    background-color: white;
+    /*background-image: url("/images/bgmn.gif") ; */
+    background-repeat:repeat-y;
+    background-position: right; 
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    color: #1b8b4c;
+    font-size: 13px; 
+    vertical-align: top;
+    text-align: right;
+}
+
+#nav li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Submenu */
+
+.hasChildren {
+    position: absolute;
+    width: 5px; height: 5px;
+    right : 0;
+    bottom: 0;
+}
+
+#nav li ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    padding: 0; margin: 0;
+}
+
+#nav li:hover > ul {
+    display: block;
+}
+
+#nav li ul li, #nav li ul li a {
+    float: none;
+}
+
+#nav li ul li {
+    _display: inline; /* for IE6 */
+}
+
+#nav li ul li a {
+    width: 160px;
+    display: block;
+}
+
+/* SUBSUB Menu */
+
+#nav li ul li ul {
+    display: none;
+}
+
+#nav li ul li:hover ul {
+    left: 100%;
+    top: 0;
+}
+
+
+#nav li ul {
+
+}
+HTML {
+	HEIGHT: 100%
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 10pt Arial, Helvetica, sans-serif; BACKGROUND: url(/i_sbor/wave.png) white no-repeat 0px 50px; HEIGHT: 100%; COLOR: #555; PADDING-TOP: 0px
+}
+A {
+	COLOR: #006666; FONT-SIZE: inherit; CURSOR: pointer; TEXT-DECORATION: underline
+}
+#overlay {
+	POSITION: relative; MIN-HEIGHT: 100%; BACKGROUND: url(/i_sbor/grenmoz.png) no-repeat right top; HEIGHT: auto !important
+}
+#page {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#header {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 120px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+#content {
+	PADDING-BOTTOM: 120px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+#sidebar {
+	PADDING-BOTTOM: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 20px; PADDING-TOP: 20px
+}
+#inter {
+	HEIGHT: 0px; CLEAR: both; OVERFLOW: hidden
+}
+#footer {
+	Z-INDEX: 2; POSITION: relative; MIN-WIDTH: 990px; MARGIN-TOP: -120px; BACKGROUND: url(/i_sbor/footer.png) repeat-x left bottom; HEIGHT: 120px
+}
+#footer_content {
+	POSITION: relative; MARGIN: 0px auto; WIDTH: 960px; CLEAR: both
+}
+#logo {
+	Z-INDEX: 20; POSITION: relative; TEXT-INDENT: -9999px; WIDTH: 220px; DISPLAY: block; BACKGROUND: url(/i_sbor/logo-13.png) 0px 0px; HEIGHT: 58px; OVERFLOW: hidden; TOP: -100px; TEXT-DECORATION: none; LEFT: 0px
+}
+#logo A {
+	WIDTH: 220px; DISPLAY: block; HEIGHT: 58px
+}
+UL.mainmenu {
+	LIST-STYLE: none none outside; POSITION: relative; MARGIN-LEFT: 10px; TOP: 0px
+}
+UL.mainmenu LI.mainn {
+	TEXT-ALIGN: center; WIDTH: 90px; DISPLAY: inline-block; BACKGROUND: #00a0bf 0px 0px; HEIGHT: 80px; COLOR: #ffffff; MARGIN-RIGHT: 10px
+}
+UL.mainmenu LI A {
+	POSITION: relative; COLOR: #ffffff; TOP: 0px;
+}
+UL.mainmenu LI.active {
+	BACKGROUND: #006699 0px 0px
+}
+DIV.flash-error {
+	BORDER-BOTTOM: #ddd 2px solid; BORDER-LEFT: #ddd 2px solid; PADDING-BOTTOM: 0.8em; PADDING-LEFT: 0.8em; PADDING-RIGHT: 0.8em; MARGIN-BOTTOM: 1em; BORDER-TOP: #ddd 2px solid; BORDER-RIGHT: #ddd 2px solid; PADDING-TOP: 0.8em
+}
+DIV.flash-notice {
+	BORDER-BOTTOM: #ddd 2px solid; BORDER-LEFT: #ddd 2px solid; PADDING-BOTTOM: 0.8em; PADDING-LEFT: 0.8em; PADDING-RIGHT: 0.8em; MARGIN-BOTTOM: 1em; BORDER-TOP: #ddd 2px solid; BORDER-RIGHT: #ddd 2px solid; PADDING-TOP: 0.8em
+}
+DIV.flash-success {
+	BORDER-BOTTOM: #ddd 2px solid; BORDER-LEFT: #ddd 2px solid; PADDING-BOTTOM: 0.8em; PADDING-LEFT: 0.8em; PADDING-RIGHT: 0.8em; MARGIN-BOTTOM: 1em; BORDER-TOP: #ddd 2px solid; BORDER-RIGHT: #ddd 2px solid; PADDING-TOP: 0.8em
+}
+DIV.flash-error {
+	BORDER-BOTTOM-COLOR: #fbc2c4; BORDER-TOP-COLOR: #fbc2c4; BACKGROUND: #fbe3e4; COLOR: #8a1f11; BORDER-RIGHT-COLOR: #fbc2c4; BORDER-LEFT-COLOR: #fbc2c4
+}
+DIV.flash-notice {
+	BORDER-BOTTOM-COLOR: #ffd324; BORDER-TOP-COLOR: #ffd324; BACKGROUND: #fff6bf; COLOR: #514721; BORDER-RIGHT-COLOR: #ffd324; BORDER-LEFT-COLOR: #ffd324
+}
+DIV.flash-success {
+	BORDER-BOTTOM-COLOR: #c6d880; BORDER-TOP-COLOR: #c6d880; BACKGROUND: #e6efc2; COLOR: #264409; BORDER-RIGHT-COLOR: #c6d880; BORDER-LEFT-COLOR: #c6d880
+}
+DIV.flash-error A {
+	COLOR: #8a1f11
+}
+DIV.flash-notice A {
+	COLOR: #514721
+}
+DIV.flash-success A {
+	COLOR: #264409
+}
+DIV.form .rememberMe LABEL {
+	DISPLAY: inline
+}
+DIV.view {
+	BORDER-BOTTOM: #c9e0ed 1px solid; BORDER-LEFT: #c9e0ed 1px solid; PADDING-BOTTOM: 10px; MARGIN: 10px 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #c9e0ed 1px solid; BORDER-RIGHT: #c9e0ed 1px solid; PADDING-TOP: 10px
+}
+DIV.breadcrumbs {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; FONT-SIZE: 0.9em; PADDING-TOP: 5px
+}
+DIV.breadcrumbs SPAN {
+	FONT-WEIGHT: bold
+}
+DIV.search-form {
+	PADDING-BOTTOM: 10px; MARGIN: 10px 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #eee; PADDING-TOP: 10px
+}
+.portlet {
+	
+}
+.portlet-decoration {
+	BORDER-LEFT: #6faccf 5px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: #b7d6e7; PADDING-TOP: 3px
+}
+.portlet-title {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #298dcd; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.portlet-content {
+	PADDING-BOTTOM: 5px; MARGIN: 0px 0px 15px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: #effdff; FONT-SIZE: 0.9em; PADDING-TOP: 5px
+}
+.portlet-content UL {
+	LIST-STYLE: none none outside; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.portlet-content LI {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 2px
+}
+.operations {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.operations LI {
+	PADDING-BOTTOM: 2px
+}
+.operations LI A {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; DISPLAY: block; FONT: bold 12px/15px Arial; COLOR: #0066a4; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.operations LI A:visited {
+	COLOR: #0066a4
+}
+.operations LI A:hover {
+	BACKGROUND: #80cfff
+}
+
+/*** ncab ***/
+
+.page_title {
+    color: #00a0bf;
+    font-size: 21px;
+    border-bottom: 2px solid #00a0bf;
+    padding-bottom: 10px;
+}
+
+.page_title_und {
+    font-size: 5px;
+    border-top: 1px dashed #00a0bf;
+    margin-top: 1px;
+}
+
+.cab-table {
+    border: 1px solid #66cc33;
+    border-collapse: collapse;
+}
+
+.cab-header {
+    border: 1px solid #069;
+    background-color: #00a0bf;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 0px;
+}
+
+.cab-value {
+    border: 1px solid #069;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 0px;
+}
+
+/**** end ncab ****/

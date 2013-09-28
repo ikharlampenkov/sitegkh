@@ -1,0 +1,269 @@
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 10:41
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 10:41
+info   SELECT * FROM phones  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  27.09.2013 10:41
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 10:41
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 10:41
+info   SELECT * FROM phones  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 10:41
+info   SELECT user_id FROM personal_account WHERE ls="admin"  27.09.2013 10:41
+error   Can`t complit query: SELECT user_id FROM personal_account WHERE ls="admin" No error: 1054:: Error msg: Unknown column 'ls' in 'where clause' ;  27.09.2013 10:41
+info   SELECT id, login, password, title FROM user, user_role WHERE user.role=user_role.title AND login="admin"  27.09.2013 10:41
+info   SELECT password FROM user WHERE login="admin"  27.09.2013 10:41
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id AND is_impotant=1 ORDER BY date DESC   27.09.2013 10:41
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 10:41
+info   SELECT * FROM phones  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 10:41
+info   SELECT password FROM user WHERE login="admin"  27.09.2013 10:41
+info   SELECT * FROM content_page  27.09.2013 10:41
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id AND is_impotant=1 ORDER BY date DESC   27.09.2013 10:41
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 10:41
+info   SELECT * FROM phones  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 10:41
+info   SELECT password FROM user WHERE login="admin"  27.09.2013 10:41
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 10:41
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 10:41
+info   SELECT * FROM phones  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 10:41
+info   SELECT * FROM content_page WHERE id=0 OR page_title="tarif"  27.09.2013 12:50
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 12:50
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 12:50
+info   SELECT * FROM phones  27.09.2013 12:50
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 12:50
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 12:50
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 12:50
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 12:50
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 13:13
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 13:13
+info   SELECT * FROM phones  27.09.2013 13:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 13:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 13:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 13:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 13:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="distributor"  27.09.2013 13:50
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 13:50
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 13:50
+info   SELECT * FROM phones  27.09.2013 13:50
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 13:50
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 13:50
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 13:50
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 13:50
+info   SELECT * FROM news_category WHERE id=5  27.09.2013 13:53
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  AND news_category_id=5 ORDER BY date DESC  LIMIT 0, 20  27.09.2013 13:53
+info   SELECT COUNT(news.id) FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  AND news_category_id=5  27.09.2013 13:53
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 13:53
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 13:53
+info   SELECT * FROM phones  27.09.2013 13:53
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 13:53
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 13:53
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 13:53
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 13:53
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 14:08
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 14:08
+info   SELECT * FROM phones  27.09.2013 14:08
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 14:08
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 14:08
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 14:08
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 14:08
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 14:28
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 14:28
+info   SELECT * FROM phones  27.09.2013 14:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 14:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 14:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 14:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 14:28
+info   SELECT * FROM news_category WHERE id=4  27.09.2013 15:13
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  AND news_category_id=4 ORDER BY date DESC  LIMIT 0, 20  27.09.2013 15:13
+info   SELECT COUNT(news.id) FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  AND news_category_id=4  27.09.2013 15:13
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 15:13
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 15:13
+info   SELECT * FROM phones  27.09.2013 15:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 15:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 15:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 15:13
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 15:13
+info   SELECT * FROM news_category WHERE id=3  27.09.2013 15:57
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  AND news_category_id=3 ORDER BY date DESC  LIMIT 0, 20  27.09.2013 15:57
+info   SELECT COUNT(news.id) FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  AND news_category_id=3  27.09.2013 15:57
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 15:57
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 15:57
+info   SELECT * FROM phones  27.09.2013 15:57
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 15:57
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 15:57
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 15:57
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 15:57
+info   SELECT * FROM content_page WHERE id=0 OR page_title="team"  27.09.2013 18:28
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 18:28
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 18:28
+info   SELECT * FROM phones  27.09.2013 18:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 18:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 18:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 18:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 18:28
+info   SELECT * FROM content_page WHERE id=0 OR page_title="mode"  27.09.2013 19:45
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 19:45
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 19:45
+info   SELECT * FROM phones  27.09.2013 19:45
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 19:45
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 19:45
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 19:45
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 19:45
+info   SELECT * FROM content_page WHERE id=0 OR page_title="paid"  27.09.2013 20:31
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 20:31
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 20:31
+info   SELECT * FROM phones  27.09.2013 20:31
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 20:31
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 20:31
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 20:31
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 20:31
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contact"  27.09.2013 21:59
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 21:59
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 21:59
+info   SELECT * FROM phones  27.09.2013 21:59
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 21:59
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 21:59
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 21:59
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 21:59
+info   SELECT * FROM content_page WHERE id=0 OR page_title="ot.2011"  27.09.2013 22:00
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 22:00
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 22:00
+info   SELECT * FROM phones  27.09.2013 22:00
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 22:00
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 22:00
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 22:00
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 22:00
+info   SELECT * FROM content_page WHERE id=0 OR page_title="fin_ot._2011"  27.09.2013 22:01
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  27.09.2013 22:01
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  27.09.2013 22:01
+info   SELECT * FROM phones  27.09.2013 22:01
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  27.09.2013 22:01
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  27.09.2013 22:01
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  27.09.2013 22:01
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  27.09.2013 22:01
+info   SELECT * FROM content_page WHERE id=0 OR page_title="narusheni"  28.09.2013 05:51
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  28.09.2013 05:51
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  28.09.2013 05:51
+info   SELECT * FROM phones  28.09.2013 05:51
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  28.09.2013 05:51
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  28.09.2013 05:51
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  28.09.2013 05:51
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  28.09.2013 05:51
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  28.09.2013 06:19
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  28.09.2013 06:19
+info   SELECT * FROM phones  28.09.2013 06:19
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  28.09.2013 06:19
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  28.09.2013 06:19
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  28.09.2013 06:19
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  28.09.2013 06:19
+info   SELECT * FROM content_page WHERE id=0 OR page_title="rates"  28.09.2013 07:22
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  28.09.2013 07:22
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  28.09.2013 07:22
+info   SELECT * FROM phones  28.09.2013 07:22
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  28.09.2013 07:22
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  28.09.2013 07:22
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  28.09.2013 07:22
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  28.09.2013 07:22
+info   SELECT * FROM content_page WHERE id=0 OR page_title="income"  28.09.2013 08:56
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  28.09.2013 08:56
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  28.09.2013 08:56
+info   SELECT * FROM phones  28.09.2013 08:56
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  28.09.2013 08:56
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  28.09.2013 08:56
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  28.09.2013 08:56
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  28.09.2013 08:56
+info   SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
+                    FROM news, news_category
+                    WHERE news.news_category_id=news_category.id  ORDER BY date DESC
+                      LIMIT 5  28.09.2013 10:15
+info   SELECT * FROM faq WHERE is_situation=1 AND is_folder=0  28.09.2013 10:15
+info   SELECT * FROM phones  28.09.2013 10:15
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main"  28.09.2013 10:15
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_about"  28.09.2013 10:15
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_service"  28.09.2013 10:15
+info   SELECT * FROM content_page WHERE id=0 OR page_title="main_educational"  28.09.2013 10:15

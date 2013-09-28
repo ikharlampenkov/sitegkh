@@ -1,0 +1,624 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #f1dba6;
+    height: 100%;
+    min-height: 100%;
+
+    position: relative;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1150px;
+    background: #fff;
+    position: relative;
+    padding: 0 0 0 20px;
+    height: 100%;
+    min-height: 100%;
+    height: auto !important;
+}
+
+#header {
+    position: relative;
+    height: 460px;
+    width: 1129px;
+
+}
+
+#header_top {
+    position: relative;
+    height: 342px;
+    width: 1129px;
+    background: url(/i_kvkem/header_bg.png) no-repeat left top;
+}
+
+#header_top .sitename {
+    position: absolute;
+    top: 105px;
+    left: 20px;
+    z-index: 3;
+
+}
+
+#header_top .sitename a {
+    display: block;
+    height: 110px;
+    width: 657px;
+    background: url(/i_kvkem/logo.png) no-repeat left top;
+}
+
+#header_top .contacts {
+    position: absolute;
+    top: 235px;
+    left: 40px;
+    z-index: 3;
+
+}
+
+#header_top .contacts p {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+#header_top .contacts p b {
+
+    font-size: 30px;
+    font-weight: 100;
+
+}
+
+#header_top .user_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 245px;
+    z-index: 3;
+
+}
+
+#header_top .user_menu a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #146694;
+    padding: 11px 13px 13px;
+    display: block;
+    text-decoration: underline;
+}
+
+#header_top .user_menu .reg {
+    float: left;
+}
+
+#header_top .user_menu .account {
+    float: right;
+}
+
+#header_top .user_menu a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: url(/i_kvkem/user_menu.png) repeat-x left top;
+}
+
+/************* mainmenu *************************/
+#mainmenu {
+    position: relative;
+    height: 77px;
+    padding: 0 0 0 0;
+    width: 1129px;
+    background: url(/i_kvkem/menu_bg.png) no-repeat left top, url(/i_kvkem/submenu_bg.png) no-repeat left bottom;
+
+}
+
+#mainmenu .menu {
+    list-style: none;
+    margin: 0 0 0 94px;
+    padding: 10px 0 0 0;
+    position: relative;
+
+}
+
+#mainmenu .menu li {
+    list-style: none;
+    padding: 0 37px 0 0;
+    margin: 0;
+    height: 41px;
+    text-align: Left;
+    float: left;
+}
+
+#mainmenu .menu li  a {
+
+    margin: 0;
+    padding: 0;
+    color: #4a3a12;
+    line-height: 14px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: #fff 1px 1px 1px;
+
+}
+
+#mainmenu .menu li a:hover {
+
+    color: #105580;
+    text-decoration: none;
+
+}
+
+#mainmenu .menu li .selected {
+
+    color: #105580;
+    text-decoration: none;
+
+}
+
+#mainmenu .menu .selected ul {
+
+    display: block;
+}
+
+#mainmenu .menu li ul {
+    position: absolute;
+    bottom: -60px;
+    left: -40px;
+    display: none;
+}
+
+#mainmenu .menu li ul li {
+    position: relative;
+    list-style: none;
+    padding: 0 27px 0 0;
+    margin: 0;
+    height: 100%;
+    text-align: Left;
+
+}
+
+#mainmenu .menu li ul li a {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 14px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#mainmenu .menu li ul a:hover {
+    /* color: #105580; */
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+#mainmenu .menu li ul .selected {
+
+    color: #105580;
+    text-decoration: none;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+/************* submenu *************************/
+#submenu {
+    position: relative;
+    height: 26px;
+
+    padding: 10px 0 0 0;
+    width: 1129px;
+    background: url(/i_kvkem/submenu_bg.png) no-repeat left top;
+
+}
+
+#submenu .menu {
+    list-style: none;
+    margin: 0 0 0 94px;
+    padding: 0 0 0 0;
+    position: relative;
+
+}
+
+#submenu .menu li {
+    position: relative;
+    list-style: none;
+    padding: 0 27px 0 0;
+    margin: 0;
+    height: 100%;
+    text-align: left;
+    float: left;
+}
+
+#submenu .menu li  a {
+
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 14px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+#submenu .menu li a:hover {
+
+    color: #105580;
+    text-decoration: none;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+#submenu .menu li .selected {
+
+    color: #105580;
+    text-decoration: none;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+/********************************************************/
+#head {
+    position: relative;
+    height: 41px;
+    width: 1129px;
+    background: url(/i_kvkem/search_bg.png) no-repeat left top;
+
+}
+
+#head  .date_now {
+    position: absolute;
+    top: 14px;
+    left: 37px;
+    color: #094668;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+#head  .h1 {
+    position: absolute;
+    top: 8px;
+    left: 291px;
+
+}
+
+/********************************************************/
+#head {
+    position: relative;
+    height: 41px;
+    width: 1129px;
+    background: url(/i_kvkem/search_bg.png) no-repeat left top;
+
+}
+
+#head  .date_now {
+    position: absolute;
+    top: 14px;
+    left: 37px;
+    color: #094668;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+#head  .h1 {
+    position: absolute;
+    top: 8px;
+    left: 291px;
+
+}
+
+#head  .h1 h1 {
+
+    color: #094668;
+    font-size: 23px;
+    font-family: Verdana, sans-serif;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+/******************************** поиск ********************/
+#head  .search {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    width: 260px;
+
+}
+
+#head  .search .search_field {
+    border: 0;
+    width: 166px;
+    height: 25px;
+    background: url(/i_kvkem/search_field.png) no-repeat left top;
+    color: #878787;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+    margin: 0 5px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#head  .search .search_button {
+    width: 77px;
+    height: 25px;
+    border: 0;
+    background: url(/i_kvkem/search_button.png) no-repeat left top;
+    cursor: pointer;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/********************* content *************************/
+#content {
+    width: 1129px;
+    margin: 25px 0 0 0; /* Отступ на ширину левой и правой колонки*/
+}
+
+#content .left_column {
+    width: 184px; /* Ширина левой колонки */
+    float: left;
+    padding: 0 35px 0 45px;
+}
+
+#content .right_column {
+    width: 356px; /* Ширина правой колонки */
+    float: right;
+    padding: 0 0 0 47px;
+}
+
+#content .center {
+    width: 726px;
+    float: left;
+    margin: 0; /* Отступ на ширину левой и правой колонки*/
+    padding: 0;
+    /* background:url(/i_kvkem/content_ico.png) no-repeat left 5px; */
+}
+
+/********************* left_column *************************/
+
+#content  .item {
+    margin: 0 0 25px 0;
+}
+
+#content  .item .h2 {
+    width: 343px;
+    height: 23px;
+    background: url(/i_kvkem/h2.png) repeat-x left top;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 13px 0 0 13px;
+    margin: 0;
+    font-weight: 100;
+}
+
+#content  .item p {
+
+    color: #146694;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    padding: 13px 0 0 13px;
+    margin: 0;
+
+}
+
+#content  .item ul {
+
+    list-style: none;
+    margin: 0 0 0 25px;
+    padding: 0;
+
+}
+
+#content  .item ul li {
+
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+
+}
+
+#content  .item ul li p {
+
+    color: #838383;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 5px 0 0 0;
+    margin: 0;
+
+}
+
+#content  .item ul li label {
+
+    color: #838383;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+#content  .item ul li a {
+    color: #146694;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+#content  .item ul li a {
+    color: #146694;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+#content  .item .submit_poll {
+    width: 47px;
+    height: 26px;
+    border: 0;
+    background: url(/i_kvkem/submit_poll.png) no-repeat left top;
+    cursor: pointer;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+#content  .item .result_poll {
+    width: 77px;
+    height: 25px;
+    border: 0;
+    background: url(/i_kvkem/search_button.png) no-repeat left top;
+    cursor: pointer;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+/************** center ************/
+
+#content .center h2 {
+    padding: 0;
+    margin: 0 0 5px 0;
+    color: #146695;
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#content .center a {
+
+    color: #146594;
+
+}
+
+#content .center p {
+    margin: 0 0 20px 0;
+    color: #5a5959;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+
+#content .center .date_create {
+    padding: 0 0 0 20px;
+    margin: 0 0 20px 0;
+    background: url(/i_kvkem/date_create.png) no-repeat left top;
+    color: #828282;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+}
+
+#content .center .page_bar {
+    padding: 0;
+    margin: 40px 0 0 0;
+
+}
+
+#content .center .page_bar a {
+    margin: 0 5px 0 0;
+    color: #146694;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#content .center .page_bar span {
+    margin: 0 5px 0 0;
+    color: #828282;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+#content .center .page_bar .prev {
+    margin: 0 20px 0 0;
+
+}
+
+#content .center .page_bar .next {
+    margin: 0 0 0 10px;
+
+}
+
+
+/************ all ************************/
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+#save {
+    width: 100px;
+}
+
+.page_title {
+    color: #146695;
+    font-size: 21px;
+    border-bottom: 2px solid #146695;
+    padding-bottom: 10px;
+}
+
+.page_title_und {
+    font-size: 5px;
+    border-top: 1px dashed #146695;
+    margin-top: 1px;
+}
+
+/************ news ********************/
+.news_date {
+    color: #146695;
+    font-size: 10pt;
+    line-height: 16pt;
+}
+
+.news_title {
+    color: #000000;
+    font-size: 12pt;
+    line-height: 16pt;
+}
+
+.news_text_link {
+    color: #616161;
+    font-size: 10pt;
+    line-height: 16pt;
+}

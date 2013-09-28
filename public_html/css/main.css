@@ -1,0 +1,284 @@
+/*
+    Document   : main
+    Created on : 05.10.2011, 0:24:44
+    Author     : Moris
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+body {
+    background-color:#ffffff;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+tr {
+    vertical-align: top;
+}
+
+a {
+    color: #9c9c9e;
+    font-size: 10pt;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+input[type=submit] {
+    width: 100px;
+}
+
+.red {
+    color: #ff0000;
+}
+
+#save {
+    width: 100px;
+}
+
+.mainblock {
+    width: 1000px;
+    padding: 0px;
+}
+
+td.imgl {
+    width: 344px;
+    height: 346px;
+    background-image: url(/i/imgr.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+td.imgc {
+    width: 368px;
+    height: 346px;
+    background-image: url(/i/fon.jpg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding: 0px;
+}
+
+td.imgr {
+    width: 288px;
+    height: 346px;
+    background-image: url(/i/imgl.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+td.centerfon {
+    height: 346px;
+    background-image: url(/i/fon.jpg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding: 0px;
+}
+
+td.nizfonbanner {
+    height: 342px;
+    background-color: #ebebeb;
+    padding: 0px;
+}
+
+td.nizfon {
+    height: 75px;
+    background-image: url(/i/nizfon.jpg);
+    background-color: #00a2c1;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+.imgl_block {
+    padding: 8px 0px 0px 39px;
+}
+
+.imgr_block {
+    padding: 8px 0px 0px 66px;
+}
+
+.imgl_link_block {
+    padding: 35px 0px 0px 0px;
+}
+
+.inline-block {
+	display: -moz-inline-stack;
+    display: inline-block;
+    _overflow: hidden;
+    *zoom: 1;
+    *display: inline;
+}
+
+a.imgl {
+    color: #9c9c9e;
+    font-size: 12pt;
+    line-height: 16pt;
+
+}
+
+.imgr_link_block {
+    padding: 26px 0px 0px 0px;
+}
+
+span.imgr_title {
+    font-size: 12pt;
+    color: #c96b5f;
+}
+
+span.imgr_text {
+    font-size: 12pt;
+    color: #000000;
+}
+
+.lk_block {
+    padding: 43px 0px 0px 32px;
+}
+
+.lk_text {
+    color: #000000;
+    font-size: 10pt;
+    line-height: 25pt;
+}
+
+.rzdtitle {
+    font-size: 18pt;
+    color: #0d436c;
+
+}
+
+.rzdtitle_mini {
+    font-size: 14pt;
+    color: #0d436c;
+}
+
+.loginfield {
+    color: #d8dada;
+    border: 1px #d8dada solid;
+    width: 122px;
+    height: 22px;
+    vertical-align: top;
+}
+
+.news_date {
+    color: #8ec2ee;
+    font-size: 10pt;
+    line-height: 16pt;
+}
+
+.news_title {
+    color: #000000;
+    font-size: 12pt;
+    line-height: 16pt;
+}
+
+.news_text_link {
+    color: #9c9c9e;
+    font-size: 10pt; 
+    line-height: 16pt;
+}
+
+.rascr_img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+.rascr_text {
+    color: #000000;
+    font-size: 12pt;
+}
+
+.faq_t {
+    color: #000000;
+    font-size: 12pt;
+    text-decoration: none;
+    border-bottom: 1px dotted #000000; 
+}
+
+.faq_t_img {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+ul { list-style: none; margin: 0; padding: 0;}
+
+.panel { margin-bottom:0px; font-size: 10px; }
+.panel { height:33px; width:650px; }
+.panel li {  }
+.panel li.r { }
+.panel a { color:#000000; text-decoration: none; display:block; float:left; font-size:140%; line-height: 33px ;width: 90px; text-align:center;}
+.panel li.active a { background-image: url('/i/mi.gif') !important; height:100%; color: black !important; width: 90px}
+.panel a:hover, .panel li.hover a { background-image: url('/i/mi.gif') ; color: #416e79;width: 90px}
+
+ul.sub { clear:both; height:30px; padding:0px 0 0 0px; font-size:10px; background-color: #d8dada; width: 100%}
+ul.sub li { float:left; margin-right:4px; }
+ul.sub li a { display:block; float:left; font-size:1.3em; margin:6px 6px 6px 6px; padding:0px 6px; color: #416e79; }
+ul.sub li a:hover,  ul.sub li.active a { background-color:#c4c4c4; color:black;  }
+ul.sub li.active a { color:#fff; }
+ul.sub li.active a.disabled { background-color:#eee; color:#ddd; }
+ul.sub li.active a.disabled:hover { background-color:#eee; color:#fff; }
+ul.sub li a.disabled { color:#ddd;}
+ul.sub li a.disabled:hover { background-color:Transparent; }
+div.subMenus {clear: both; height: 30px; overflow: hidden; position: relative; }
+div.subMenus ul.sub {position: absolute; top: -30px; }
+
+
+.pom {background-color: #e4f8ff}
+.pem {background-color: #f4f6e1}
+
+
+/********** personal cabinet **********/
+
+.page_title {
+    color: #838383;
+    font-size: 21px;
+    border-bottom: 2px solid #3399ff;
+    padding-bottom: 10px;
+}
+
+.page_title_und {
+    font-size: 5px;
+    border-top: 1px dashed #3399ff;
+    margin-top: 1px;
+}
+
+.cab-table {
+    border: 1px solid #3399ff;
+    border-collapse: collapse;
+}
+
+.cab-header {
+    border: 1px solid #3399ff;
+    background-color: #5dcaff;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 0;
+}
+
+.cab-value {
+    border: 1px solid #3399ff;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 0;
+}
+
+/*************************************/

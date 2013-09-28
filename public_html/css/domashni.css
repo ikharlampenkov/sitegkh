@@ -1,0 +1,759 @@
+@font-face {
+    font-family: 'AGLettericaCondensedLight';
+    src: url('/fonts/AGLettericaCondensedLight-Roman.eot');
+    src: url('/fonts/AGLettericaCondensedLight-Roman.eot?#iefix') format('embedded-opentype'), url('/fonts/AGLettericaCondensedLight-Roman.woff') format('woff'), url('/fonts/AGLettericaCondensedLight-Roman.ttf') format('truetype'), url('/fonts/AGLettericaCondensedLight-Roman.svg#AGLettericaCondensedLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    height: auto !important;
+    position: relative;
+    font-family: Arial;
+    background: #f0f0f0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #12497e;
+    font-size: 30px;
+    padding: 0;
+    margin: 15px 0;
+    font-family: 'AGLettericaCondensedLight', sans-serif;
+    font-weight: 100;
+    border-bottom: #12497e 1px solid;
+}
+
+h2.con_title {
+    color: #016199;
+    font-size: 30px;
+    margin: 15px 0;
+    padding: 0;
+    font-family: 'AGLettericaCondensedLight', sans-serif;
+    font-weight: 100;
+    border-bottom: #12497e 1px solid;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.center {
+    width: 1048px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#header {
+    width: 100%;
+    height: 561px;
+    background: #042d50 url(/i_domashni/header_bg.jpg) no-repeat center top;
+    padding: 36px 0 0 0;
+}
+
+.pasp {
+    position: relative;
+    height: 128px;
+    background: #fff;
+}
+
+.account_links {
+    position: absolute;
+    top: 19px;
+    right: 35px;
+    font-family: Arial;
+    color: #2f96d3;
+    font-size: 14px;
+}
+
+.account_links a {
+    color: #5b5b5b;
+    text-decoration: none;
+}
+
+.account_links a:hover {
+    text-decoration: underline;
+}
+
+.logo a {
+    position: absolute;
+    display: block;
+    width: 329px;
+    height: 67px;
+    top: 34px;
+    left: 34px;
+    background: url(/i_domashni/logo.png) no-repeat left center;
+    z-index: 3;
+}
+
+.gerb {
+    position: absolute;
+    width: 50px;
+    height: 78px;
+    top: 36px;
+    right: 284px;
+    background: url(/i_domashni/gerb.png) no-repeat left center;
+    z-index: 3;
+}
+
+.phone {
+    position: absolute;
+    width: 224px;
+    height: 19px;
+    top: 49px;
+    right: 35px;
+    background: url(/i_domashni/phone.png) no-repeat left center;
+    z-index: 3;
+}
+
+.city {
+    position: absolute;
+    top: 83px;
+    right: 35px;
+    z-index: 3;
+    font-family: 'AGLettericaCondensedLight';
+    color: #6c6c6c;
+    font-size: 19px;
+}
+
+.shadow_header {
+    position: absolute;
+    width: 946px;
+    height: 16px;
+    left: 0;
+    bottom: -16px;
+    background: url(/i_domashni/shadow_slider.png) no-repeat left bottom;
+    z-index: 1;
+}
+
+/******************************** поиск ********************/
+.search {
+    position: absolute;
+    width: 243px;
+    top: 16px;
+    right: 31px;
+    line-height: 21px;
+}
+
+.search .search_field {
+    position: absolute;
+    border: 0;
+    width: 205px;
+    height: 21px;
+    color: #000;
+    font-family: Arial;
+    font-size: 14px;
+    background: url(/i_domashni/search_field.png) no-repeat left center;
+    top: 0px;
+    left: 0;
+    padding: 0 0 0 15px;
+}
+
+.search .search_button {
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    background: url(/i_domashni/search_button.png) no-repeat left top;
+    border: 0;
+    top: 0px;
+    right: 0;
+    cursor: pointer;
+}
+
+/************** slider **************************/
+
+.slider {
+    position: relative;
+    width: 1048px;
+    height: 342px;
+    margin: 1px 0 0 0px;
+    background: #fff;
+    z-index: 1;
+}
+
+.slider .arrl {
+    width: 33px;
+    height: 98px;
+    position: absolute;
+    top: 122px;
+    left: -15px;
+    background: url(/i_domashni/arr_l.png) no-repeat left top;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.slider .arrr {
+    width: 33px;
+    height: 98px;
+    position: absolute;
+    top: 122px;
+    right: -15px;
+    background: url(/i_domashni/arr_r.png) no-repeat left top;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.slider  #cont {
+    overflow: hidden;
+    width: 1048px;
+    height: 342px;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.slider  #cont .items {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.slider  #cont .items li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 1048px;
+    height: 342px;
+}
+
+.slider  #cont .sliderim {
+    width: 1048px;
+    height: 342px;
+}
+
+/************* mainmenu *************************/
+#mainmenu {
+    position: relative;
+    width: 1048px;
+    height: 89px;
+    background: url(/i_domashni/menu_bg.png) repeat-x;
+}
+
+#mainmenu .menu {
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 1048px;
+
+}
+
+#mainmenu .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#mainmenu .menu li {
+    list-style: none;
+    margin: 0px 0 0 0;
+    padding: 0px 0px 0px 0;
+    float: left;
+    position: relative;
+    height: 89px;
+    line-height: 89px;
+    background: url(/i_domashni/menu_separator.png) no-repeat left top;
+}
+
+#mainmenu .menu li.first {
+    background: none;
+}
+
+#mainmenu .menu li a {
+    display: block;
+    padding: 0 39px 0 28px;
+    color: #fff;
+    margin: 0 0 0px 0;
+    text-decoration: none;
+    font-size: 19px;
+    height: 89px;
+    line-height: 89px;
+    font-family: 'AGLettericaCondensedLight';
+}
+
+#mainmenu .menu li a:hover, #mainmenu .menu .selected a {
+    color: #fff;
+    text-decoration: none;
+    background: #0168a4;
+}
+
+#mainmenu .menu ul li ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 89px;
+    width: 232px;
+    min-height: 100px;
+    background: url(/i_domashni/menu_hover.png) repeat;
+    padding: 20px 0px;
+    z-index: 1000;
+    border: 1px solid #68a1c2;
+}
+
+#mainmenu .menu li ul  li {
+    margin: 0 0 5px 0;
+    padding: 9px 0 0 27px;
+    height: auto;
+    line-height: 13px;
+    width: 165px;
+    background: transparent;
+}
+
+#mainmenu .menu  li ul  li  a {
+    text-decoration: none;
+    padding: 9px 0 0 0;
+    margin: 0;
+    color: #01629a;
+    line-height: 13px;
+    height: auto;
+    font-size: 13px;
+    font-family: Arial;
+    border-top: 1px solid #dddada;
+}
+
+#mainmenu .menu  li ul  li.first  a {
+
+    border-top: 0;
+}
+
+#mainmenu .menu  li ul  li a:hover, #mainmenu .menu li ul .selected a {
+    text-decoration: underline;
+
+}
+
+#mainmenu .menu .selected  ul li a {
+    background: transparent;
+    color: #01629a;
+}
+
+/****************************************/
+.page {
+    height: 1%;
+    position: relative;
+    overflow: hidden;
+    border-width: 0 1px 1px 1px;
+    border-color: #b4b4b4;
+    border-style: solid;
+    background: #fff;
+
+    width: 1048px;
+}
+
+.page_head {
+    height: 55px;
+    position: relative;
+    background: #a9a7a7;
+}
+
+.breadcrumbs {
+    position: absolute;
+    left: 38px;
+    top: 24px;
+    color: #12497e;
+    font-size: 12px;
+}
+
+.breadcrumbs a {
+
+    color: #12497e;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.page p {
+
+    color: #5d5d5d;
+    font-size: 13px;
+    font-family: Arial;
+    margin: 0 0 15px 0;
+
+}
+
+.content {
+    position: relative;
+    padding: 36px 58px 0px 0px;
+    float: left;
+    margin: 0 0px 0 0;
+    width: 587px;
+
+}
+
+.sidebar {
+    float: left;
+    position: relative;
+    margin: 0 -304px 0 0px;
+    width: 304px;
+}
+
+.artical img {
+    float: left;
+    margin: 0 20px 15px 0;
+}
+
+.artical h2 {
+    color: #3b7496;
+    font-size: 38px;
+    line-height: 38px;
+    font-family: 'AGLettericaCondensedLight';
+    font-weight: 100;
+}
+
+.artical p {
+    color: #323232;
+    font-size: 13px;
+    font-family: Arial;
+    margin: 0 0 15px 0;
+}
+
+.pathway {
+    position: absolute;
+    bottom: 35px;
+    left: 29px;
+    color: #0f6ead;
+    font-size: 15px;
+    font-family: Arial;
+    padding: 0 0 0 20px;
+}
+
+.pathway .main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    background: url(/i_domashni/home_icon.png) no-repeat;
+    width: 15px;
+    height: 14px;
+
+}
+
+.pathway a {
+    color: #0f6ead;
+    text-decoration: none;
+}
+
+.pathway a:hover {
+    text-decoration: underline;
+}
+
+.page .further {
+    position: relative;
+    display: block;
+    bottom: 0px;
+    right: 0;
+    width: 110px;
+    height: 36px;
+
+    background: url(/i_domashni/further.png) no-repeat;
+
+}
+
+/****************************************************/
+#block_infos {
+
+    position: relative;
+    float: left;
+    margin: 0 0px 0 0;
+    padding: 0 20px 0 30px;
+    width: 631px;
+
+}
+
+#block {
+
+    position: relative;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+#block .further {
+    position: relative;
+    display: block;
+    width: 110px;
+    height: 36px;
+    background: url(/i_domashni/further.png) no-repeat;
+
+}
+
+#block h2 {
+    margin: 0 0 15px 0px;
+    border-bottom: 1px solid #cfcfcf;
+
+    color: #12497e;
+    font-size: 30px;
+    padding: 0;
+    font-family: 'AGLettericaCondensedLight';
+    font-weight: 100;
+}
+
+#block p {
+    font-family: Arial;
+    color: #5d5d5d;
+    font-size: 13px;
+    padding: 0 0 19px 0;
+
+}
+
+#block img {
+    margin: 0 0 30px 20px;
+
+}
+
+.about {
+
+    margin: 38px 0 65px 0;
+}
+
+.services {
+    width: 295px;
+    margin: 0 40px 0 0;
+    float: left;
+}
+
+.educational {
+    width: 295px;
+
+    margin: 0;
+}
+
+.news {
+    width: 315px;
+    margin: 12px 0 40px 0px;
+    padding: 0 15px 20px 20px;
+    background: #f1f1f1;
+}
+
+.news h2 {
+    color: #12497e;
+    font-size: 48px;
+    padding: 0px;
+    font-family: 'AGLettericaCondensedLight';
+    font-weight: 100;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.news .item {
+    position: relative;
+    margin: 0 0 37px 0;
+    padding: 0;
+    width: 280px;
+
+}
+
+.news img {
+    float: left;
+    margin: 0 17px 0 0;
+}
+
+.news .description {
+    margin: 0 0 0 106px;
+}
+
+.news .item.further {
+
+    bottom: 0px;
+    right: 0px;
+
+}
+
+.news .item .date {
+    font-family: Arial;
+    color: #07437b;
+    font-size: 10px;
+    margin: 0px 0px 15px 0;
+}
+
+.news .item .title {
+    font-family: Arial;
+    color: #07437b;
+    font-size: 16px;
+    margin: 0px 0px 0 0;
+
+}
+
+.news .item p {
+    font-family: Arial;
+    color: #757575;
+    font-size: 13px;
+    margin: 0px 0px 0 0;
+
+}
+
+/*****************************************************/
+#services ul li {
+    float: left;
+    width: 180px;
+    margin: 0 58px 39px 0;
+}
+
+#services ul li .title {
+    color: #035686;
+    font-size: 20px;
+    margin: 0 0 12px 0;
+    font-family: 'AGLettericaCondensedLight';
+    font-weight: 100;
+}
+
+/******************** footer ************************/
+.pad {
+    height: 349px;
+    clear: both;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    height: 349px;
+    width: 100%;
+    clear: both;
+
+    overflow: hidden;
+
+}
+
+#footer .center {
+    position: relative;
+    margin: 0 auto;
+    background: url(/i_domashni/footer.png) repeat-x left top;
+    width: 1048px;
+    height: 349px;
+}
+
+#footer h3 {
+    color: #fff;
+    padding: 0;
+    margin: 0 0 33px 0;
+    font-family: 'AGLettericaCondensedLight';
+    font-size: 24px;
+
+}
+
+#footer .phone {
+    position: absolute;
+    top: -25px;
+    left: 62px;
+    width: 177px;
+    height: 98px;
+    background: url(/i_domashni/phone.png) no-repeat left top;
+
+}
+
+#footer .contacts {
+    position: absolute;
+    top: 54px;
+    left: 29px;
+    width: 350px;
+}
+
+#footer  p {
+    color: #c9c9c9;
+    font-family: Arial;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .service {
+    position: absolute;
+    top: 54px;
+    left: 369px;
+    width: 230px;
+}
+
+#footer .service li {
+    margin: 0 0 18px 0;
+    line-height: 13px;
+}
+
+#footer .service li a {
+    color: #c9c9c9;
+    font-family: Arial;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#footer .service li a:hover {
+    text-decoration: underline;
+}
+
+#footer .made a {
+    position: absolute;
+    display: block;
+    top: 36px;
+    right: 234px;
+    width: 143px;
+    height: 83px;
+    background: url(/i_domashni/invoice.png) no-repeat left top;
+
+}
+
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+
+/************** admin **********************/
+
+table {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+#save {
+    width: 100px;
+}
