@@ -115,6 +115,4 @@ spl_autoload_register('autoload', false);
 $o_log = new simo_log();
 $o_log->setLogLevel($__cfg['log.level']);
 
-//ini_set('date.timezone', 'Asia/Novosibirsk');
-
-?>
+ini_set('date.timezone', 'Asia/Novosibirsk');
