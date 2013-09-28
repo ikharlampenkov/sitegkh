@@ -7,7 +7,7 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysql://sibdnevnik_:e10adc39h@localhost:3306/sibdnevnik_reu_ckk_db';
+$__cfg['db.dsn'] = 'mysql://sibdnevnik_ckk:e10adc39h@localhost:3306/sibdnevnik_reu_ckk_db';
 $__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = true;
