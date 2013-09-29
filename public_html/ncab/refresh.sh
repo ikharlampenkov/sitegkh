@@ -1,1 +1,1 @@
-php /home/dnevnik/public_html/gkh/site_gkh/ncab/refresh.php
+php /home/s/sibdnevnik/sitegkh/public_html/ncab/refresh.php

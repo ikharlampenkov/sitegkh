@@ -8,10 +8,11 @@
  */
 
 
+defined('PRIVATE_PATH')
+ || define('PRIVATE_PATH', realpath(dirname(__FILE__) . '/../../private'));
 
-include_once '/home/dnevnik/private/classes/simo_site.php';
-
-include_once '/home/dnevnik/private/config/simo_site_kvartal_conf.php';
+include_once PRIVATE_PATH . '/classes/simo_site.php';
+include_once PRIVATE_PATH . '/config/simo_site_kvartal_conf.php';
 
 global $__cfg;
 
