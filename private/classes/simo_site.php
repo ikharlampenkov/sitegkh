@@ -66,6 +66,8 @@ if ($serverName == 'xn--21-kmcm3c.xn--p1ai') {
     include_once $config_path . 'simo_site_mycity_conf.php';
 } elseif ($serverName == 'xn---10-zedp3d.xn--p1ai') {
     include_once $config_path . 'simo_site_reu10_conf.php';
+} elseif ($serverName == 'xn--7-4tbj3b.xn--p1ai') {
+    include_once $config_path . 'simo_site_reu7_conf.php';
 } else {
     include_once $config_path . 'simo_site_conf.php';
 }

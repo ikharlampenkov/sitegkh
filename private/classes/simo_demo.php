@@ -8,7 +8,7 @@ if( !isset($_SESSION)) {
  * Подключаем общий файл конфигурации
  *
  */
-include_once PRIVATE_PATH . '/config/simo_demo_conf.php';
+include_once PRIVATE_PATH . '/config/simo_site_reu7_conf.php';
 
 /**
  * Подключаем Smarty
