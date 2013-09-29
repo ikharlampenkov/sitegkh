@@ -10,7 +10,7 @@
 $__cfg['db.dsn'] = 'mysql://sibdnevnik_reu1:e10adc39h@localhost:3306/sibdnevnik_reu1';
 $__cfg['site.main.dir'] = PRIVATE_PATH . '/../';
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
-$__cfg['db.driver.debug'] = true;
+$__cfg['db.driver.debug'] = false;
 
 $__cfg['log.path'] = $__cfg['site.main.dir'] . 'private/logs/';
 $__cfg['log.level'] = 2;
