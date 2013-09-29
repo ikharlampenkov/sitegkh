@@ -11,9 +11,18 @@ class simo_db {
      * @var array
      */
     private $_dsn = array();
+    /**
+     * @var db_driver|null
+     */
     private $_driver = null;
+
     private $_conn = false;
+
+    /**
+     * @var simo_db|null
+     */
     static private $_instance = null;
+
     public $debug = false;
 
     static function getInstance() {
@@ -48,8 +57,8 @@ class simo_db {
                 return false;
             }
         } catch (simo_exception $s_e) {
+            simo_log::logMsg('Can`t connect to db ' . $this->_dsn['db'], simo_log::SIMO_LOG_ERROR);
             throw new Exception('Can`t connect to db');
-            return false;
         }
     }
 
@@ -57,8 +66,10 @@ class simo_db {
      * Выполняет запрос и возвращает результат,
      * при отсутствии соединения устанавливает его
      *
-     * @param string $query
+     * @param string  $query
      * @param integer $mode 1-циф 2-ассоц 3-объект
+     *
+     * @throws Exception
      * @return array
      */
     public function query($query, $mode = 1) {
@@ -76,6 +87,7 @@ class simo_db {
 
             return $result;
         } catch (simo_exception $s_e) {
+            simo_log::logMsg('Can`t query ' . $query, simo_log::SIMO_LOG_ERROR);
             throw new Exception('Can`t query ' . $query);
         }
     }
@@ -184,7 +196,6 @@ class simo_db {
             $o_log = new simo_log();
             $o_log->setLogLevel(2);
             throw new simo_exception('Can`t load driver ' . $this->_dsn['scheme']);
-            return false;
         }
     }
 
