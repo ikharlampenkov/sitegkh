@@ -212,6 +212,17 @@ class gkh_cabxml extends gkh
                             }
                             $data['ls'] = $lsAttribute['KOD'];
                             $pa->addPA($data);
+                        } else {
+                            $data = array();
+                            $data['fio'] = $lsAttribute['SOBSTV'];
+                            if (!empty($lsAttribute['PASSWORD']) && (string)$lsAttribute['PASSWORD'] != ' ') {
+                                $data['password'] = trim($lsAttribute['PASSWORD']); //123456
+                            } else {
+                                $data['password'] = '123456';
+                            }
+                            $data['ls'] = $lsAttribute['KOD'];
+                            $curPA = $pa->getPAByLS($lsAttribute['KOD']);
+                            $pa->updatePA($curPA['id'], $data);
                         }
 
                         $filterList[] = $lsAttribute['KOD'];
