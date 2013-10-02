@@ -47,7 +47,7 @@ if ($serverName == 'xn--21-kmcm3c.xn--p1ai') {
 } elseif ($serverName == 'xn----7sbbfcravpexztbfy9m.xn--p1ai') {
     include_once $config_path . 'simo_site_kvkem_conf.php';
 } elseif ($serverName == 'uk-zles42.ru') {
-    include_once $config_path . 'simo_site_zles_conf.php';   
+    include_once $config_path . 'simo_site_zles_conf.php';
 } elseif ($serverName == 'xn----8sbflx5ait9i.xn--p1ai') {
     include_once $config_path . 'simo_site_pervay_conf.php';
 } elseif ($serverName == 'xn--80aai5amepo3c7b7a.xn--p1ai') {
@@ -62,7 +62,7 @@ if ($serverName == 'xn--21-kmcm3c.xn--p1ai') {
     include_once $config_path . 'simo_site_domashni_conf.php';
 } elseif ($serverName == 'xn----ltbm8b6b.xn--p1ai') {
     include_once $config_path . 'simo_site_igkh_conf.php';
-}  elseif ($serverName == 'xn--c1acndkmcarx.xn--p1ai') {
+} elseif ($serverName == 'xn--c1acndkmcarx.xn--p1ai') {
     include_once $config_path . 'simo_site_mycity_conf.php';
 } elseif ($serverName == 'xn---10-zedp3d.xn--p1ai') {
     include_once $config_path . 'simo_site_reu10_conf.php';
@@ -112,9 +112,17 @@ function autoload($className)
     }
 }
 
+global $__cfg;
+
 spl_autoload_register('autoload', false);
 
 $o_log = new simo_log();
 $o_log->setLogLevel($__cfg['log.level']);
 
 ini_set('date.timezone', 'Asia/Novosibirsk');
+
+if (isset($__cfg['finder.path']) && !empty($__cfg['finder.path'])) {
+    $_SESSION['finder_path'] = $__cfg['finder.path'] . '/';
+} else {
+    $_SESSION['finder_path'] = '';
+}

@@ -4,6 +4,7 @@ $management_company = 1;
 
 ini_set('display_errors', 0);
 ini_set('error_reporting', E_ALL);
+//print_r($_SESSION);
 
 $firstPage = false;
 
