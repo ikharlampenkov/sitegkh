@@ -262,6 +262,7 @@ div.subMenus ul.sub {position: absolute; top: -30px; }
 .cab-table {
     border: 1px solid #3399ff;
     border-collapse: collapse;
+    height: auto;
 }
 
 .cab-header {
