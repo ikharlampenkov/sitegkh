@@ -123,6 +123,14 @@ ini_set('date.timezone', 'Asia/Novosibirsk');
 
 if (isset($__cfg['finder.path']) && !empty($__cfg['finder.path'])) {
     $_SESSION['finder_path'] = $__cfg['finder.path'] . '/';
+
+    if (!file_exists($__cfg['site.dir'] . '/ckfinder/userfiles/' . $__cfg['finder.path'] . '/')) {
+        mkdir($__cfg['site.dir'] . '/ckfinder/userfiles/' . $__cfg['finder.path'] . '/', 0700);
+        mkdir($__cfg['site.dir'] . '/ckfinder/userfiles/' . $__cfg['finder.path'] . '/_thumbs/', 0700);
+        mkdir($__cfg['site.dir'] . '/ckfinder/userfiles/' . $__cfg['finder.path'] . '/files/', 0700);
+        mkdir($__cfg['site.dir'] . '/ckfinder/userfiles/' . $__cfg['finder.path'] . '/flash/', 0700);
+        mkdir($__cfg['site.dir'] . '/ckfinder/userfiles/' . $__cfg['finder.path'] . '/images/', 0700);
+    }
 } else {
     $_SESSION['finder_path'] = '';
 }

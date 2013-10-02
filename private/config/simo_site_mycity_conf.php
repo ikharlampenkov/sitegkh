@@ -44,4 +44,4 @@ $__cfg['sms.password'] = 'kirill604';
 $__cfg['ncab.path'] = 'ncab';
 $__cfg['ncab.ftp'] = 'ftp';
 
-?>
+$__cfg['finder.path'] = 'mycity';
