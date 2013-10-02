@@ -30,7 +30,7 @@ $__cfg['smarty.default.keyword'] = '';
 //$__cfg['smarty.encoding'] = 'windows-1251';
 $__cfg['smarty.encoding'] = 'utf-8';
 
-$__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html/gkh/demo';
+$__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html';
 $__cfg['site.url'] = 'http://рэу7.рф/';
 
 $__cfg['temp.dir'] = $__cfg['site.main.dir'] . 'private/temp/';

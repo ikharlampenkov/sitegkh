@@ -43,7 +43,7 @@ $__cfg['file.upload.dir'] = $__cfg['site.dir'] . '/temp_files/';
 $__cfg['sms.login'] = 'sibdnevnik';
 $__cfg['sms.password'] = 'kirill604';
 
-$__cfg['ncab.path'] = 'ncab';
+$__cfg['ncab.path'] = 'ncab/kvartal';
 $__cfg['ncab.ftp'] = 'ftp';
 
 ?>
