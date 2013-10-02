@@ -29,7 +29,7 @@
 
 <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
-    <td height="200" background="/img/bgshapka.jpg">
+    <td height="200" background="/i_reu7/bgshapka.jpg">
 
         <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
@@ -38,7 +38,7 @@
                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                         <tr>
                             <td height="30" class="topmenu">
-                                &nbsp;<img src="/img/karta.gif" align="absmiddle"/><img src="/img/mail.gif"
+                                &nbsp;<img src="/i_reu7/karta.gif" align="absmiddle"/><img src="/i_reu7/mail.gif"
                                                                                         align="absmiddle"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="?page=faq">Вопрос-ответ</a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <a href="?page=content_page&title=helpful_information">Полезная информация</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -46,13 +46,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td height="170" width="466" background="/img/podlogo.jpg">
-                                <a href="/"><img src="/img/logo.png" border="0"/></a>
+                            <td height="170" width="466" background="/i_reu7/podlogo.jpg">
+                                <a href="/"><img src="/i_reu7/logo.png" border="0"/></a>
                             </td>
                         </tr>
                     </table>
                 </td>
-                <td width="195" background="/img/podlogo2.jpg" style="padding-left:60px;" valign="top">
+                <td width="195" background="/i_reu7/podlogo2.jpg" style="padding-left:60px;" valign="top">
                     <br/>
                     <span style="font-size: 14px">Диспетчерская служба</span><br/>
                     <span style="font-size: 20px; color: #51828e;">36-54-61</span><br/><br/>
@@ -60,7 +60,7 @@
                     <span style="font-size: 20px; color: #51828e;">67-46-40</span><br/>
                     {*<span style="font-size: 12px; color: #51828e;">круглосуточно</span>*}
                 </td>
-                <td width="159" background="img/vhod.jpg" valign="top" style="padding-left: 15px;" align="right">
+                <td width="159" background="i_reu7/vhod.jpg" valign="top" style="padding-left: 15px;" align="right">
                     <br/><br/><br/>
                 {if isset($login_fail)}
                     <div style="color:red; font-weight:bold; font-size:12px;">Вы ввели неправильный логин и пароль!
@@ -137,13 +137,13 @@
                                         <div style="color: #838383; font-size: 21px; border-bottom: 2px solid #89b4be; padding-bottom: 10px;">Личный кабинет жильца</div>
                                         <div style="font-size: 5px; border-top: 1px dashed #89b4be; margin-top: 1px; ">&nbsp;</div>
                                         <table cellpadding="5" border="0" width="100%">
-                                        <tr><td><img src="/img/1.gif"></td><td class="pem">Посмотреть распечатку платежей</td></tr>
-                                        <tr><td><img src="/img/2.gif"></td><td class="pom">Посмотреть баланс платежей</td></tr>
-                                        <tr><td><img src="/img/4.gif"></td><td class="pem">Передать показания счетчиков</td></tr>
-                                        <tr><td><img src="/img/5.gif"></td><td class="pom">Подать заявку на вызов мастера</td></tr>
-                                        <tr><td><img src="/img/6.gif"></td><td class="pem">Задать вопрос управлению</td></tr>
-                                        <tr><td><img src="/img/3.gif"></td><td class="pom">Оплатить услуги</td></tr>
-                                        <tr><td><img src="/img/6.gif"></td><td class="pem">Посмотреть текущие работы по дому</td></tr>
+                                        <tr><td><i_reu7 src="/i_reu7/1.gif"></td><td class="pem">Посмотреть распечатку платежей</td></tr>
+                                        <tr><td><i_reu7 src="/i_reu7/2.gif"></td><td class="pom">Посмотреть баланс платежей</td></tr>
+                                        <tr><td><img src="/i_reu7/4.gif"></td><td class="pem">Передать показания счетчиков</td></tr>
+                                        <tr><td><img src="/i_reu7/5.gif"></td><td class="pom">Подать заявку на вызов мастера</td></tr>
+                                        <tr><td><img src="/i_reu7/6.gif"></td><td class="pem">Задать вопрос управлению</td></tr>
+                                        <tr><td><img src="/i_reu7/3.gif"></td><td class="pom">Оплатить услуги</td></tr>
+                                        <tr><td><img src="/i_reu7/6.gif"></td><td class="pem">Посмотреть текущие работы по дому</td></tr>
                                         </table>
                                         <br>
                                         <div style="color: #838383; font-size: 21px; border-bottom: 2px solid #89b4be; padding-bottom: 10px;">Как получить доступ?</div>
@@ -250,8 +250,8 @@
                 {/foreach}
 
                 </td>
-                <td valign="bottom" style="width: 281px; height: 289px; background-image: url(/img/banner.png); background-repeat: no-repeat; background-position: bottom; font-size: 1px;">
-                    <img src="/img/banner_bootom_inner.gif" />
+                <td valign="bottom" style="width: 281px; height: 289px; background-image: url(/i_reu7/banner.png); background-repeat: no-repeat; background-position: bottom; font-size: 1px;">
+                    <img src="/i_reu7/banner_bootom_inner.gif" />
                 </td>
                 <td>&nbsp;</td>
             </tr>

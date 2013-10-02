@@ -1,7 +1,7 @@
 ul { list-style: none; margin: 0; padding: 0;}
 body { background-color:#fff; font:62.5% arial,helvetica,sans-serif; margin: 0; padding: 0;}
 
-.bgmenu { background-image:url('/img/bgmenu.jpg'); }
+.bgmenu { background-image:url('/i_reu7/bgmenu.jpg'); }
 .topmenu { background-color: #f4f4e9; border-bottom: 1px solid #cedfd8 ; border-right: 1px solid #cedfd8 ; border-left: 1px solid #cedfd8; }
 .topmenu a { color: #416e79 ; font-size:140%; }
 .topmenu a:hover { background-color:#89b4be; color:#fff; }
@@ -12,9 +12,9 @@ a {color: #416e79}
 .panel { height:33px; width:885px; }
 .panel li {  }
 .panel li.r { }
-.panel a { color:#000000; text-decoration: none; display:block; float:left; font-size:140%; line-height: 33px ;width: 89px; text-align:center;background-image: url('/img/m.jpg');}
-.panel li.active a { background-image: url('/img/msel.jpg') !important; height:100%; color: #fff !important; width: 89px}
-.panel a:hover, .panel li.hover a { background-image: url('/img/mon.jpg') ; color: #416e79;width: 89px}
+.panel a { color:#000000; text-decoration: none; display:block; float:left; font-size:140%; line-height: 33px ;width: 89px; text-align:center;background-image: url('/i_reu7/m.jpg');}
+.panel li.active a { background-image: url('/i_reu7/msel.jpg') !important; height:100%; color: #fff !important; width: 89px}
+.panel a:hover, .panel li.hover a { background-image: url('/i_reu7/mon.jpg') ; color: #416e79;width: 89px}
 
 ul.sub { clear:both; height:20px; padding:5px 0 0 0px; font-size:110%; left: 100px}
 ul.sub li { float:left; margin-right:4px; }
