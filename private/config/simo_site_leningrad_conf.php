@@ -43,4 +43,4 @@ $__cfg['file.upload.dir'] = $__cfg['site.dir'] . '/temp_files/';
 $__cfg['sms.login'] = 'sibdnevnik';
 $__cfg['sms.password'] = 'kirill604';
 
-?>
+$__cfg['finder.path'] = 'leningrad';

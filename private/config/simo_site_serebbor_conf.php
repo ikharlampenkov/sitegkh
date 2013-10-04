@@ -45,4 +45,4 @@ $__cfg['sms.password'] = 'kirill604';
 $__cfg['ncab.path'] = 'ncab/sbor';
 $__cfg['ncab.ftp'] = 'ftp';
 
-?>
+$__cfg['finder.path'] = 'sbor';

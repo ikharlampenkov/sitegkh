@@ -44,4 +44,4 @@ $__cfg['sms.password'] = 'kirill604';
 
 $__cfg['faq.email.from'] = 'faq@ук-жилищник.рф';
 
-?>
+$__cfg['finder.path'] = 'gilishnik';
