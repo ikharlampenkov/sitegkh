@@ -102,7 +102,7 @@ try {
         $o_meters = new gkh_meters_cab($account_info['id']);
 
         if (isset($_POST['data'])) {
-            if (date('t') - date('j') > 3 || date('j') < 26) {
+            if (!(date('j') >= $__cfg['ncab.startdate'] && date('j') <= $__cfg['ncab.finishdate'])) {
                 $o_meters->setMetersValue($_POST['data'], 1);
                 simo_functions::chLocation('?page=' . $page);
                 exit;
@@ -113,7 +113,7 @@ try {
 
         $o_smarty->assign('pa_meters', $o_meters->getMetersByUser($date));
         $active = true;
-        if (date('t') - date('j') <= 3 || date('j') >= 26) {
+        if (!(date('j') >= $__cfg['ncab.startdate'] && date('j') <= $__cfg['ncab.finishdate'])) {
             $active = false;
         }
 

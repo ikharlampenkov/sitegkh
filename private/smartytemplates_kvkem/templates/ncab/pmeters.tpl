@@ -1,7 +1,7 @@
 <div class="page_title">Информацию о приборах учета</div>
 <div class="page_title_und">&nbsp;</div>
 
-<div style="padding:  10px 0 10px 0; text-align: justify;">Уважаемые жильцы, передавайте показания счетчиков не позднее, чем за три рабочих дня до конца месяца!</div>
+<div style="padding:  10px 0 10px 0; text-align: justify;">Уважаемые жильцы, передавайте показания счетчиков c 20 по 25 число текущего месяца!</div>
 
 {if $meters}
 <form action="?page={$page}" method="post">
@@ -23,7 +23,7 @@
                     <div id="meter_prev_{$jilci->ID|replace:'.':'_'}">{$pa_meters[{$jilci->ID}].prev_value.value}</div>
                 </td>
                 <td class="cab-value">
-                    <input type="text" name="data[{$jilci->ID}][value]" id="meter_value_{$jilci->ID|replace:'.':'_'}" value="{$pa_meters[{$jilci->ID}].cur_value.value}" style="width: 60px;" onkeyup="calcMeterDiff('{$jilci->ID|replace:'.':'_'}')"/>
+                    <input type="text" name="data[{$jilci->ID}][value]" id="meter_value_{$jilci->ID|replace:'.':'_'}" value="{$pa_meters[{$jilci->ID}].cur_value.value}" style="width: 60px;" onkeyup="calcMeterDiff('{$jilci->ID|replace:'.':'_'}')" {if !$active}disabled="disabled" {/if}/>
                     <input type="hidden" name="data[{$jilci->ID}][date]" value="{$pa_meters[{$jilci->ID}].prev_value.date}"/>
                 </td>
                 <td class="cab-value">
@@ -36,7 +36,7 @@
     <br/>
 
     <div align="center">
-        <input id="save" name="save" type="submit" value="Сохранить" style="font-size: 14px;"/>
+        <input id="save" name="save" type="submit" value="Сохранить" style="font-size: 14px;" {if $active==false}disabled="disabled"{/if}/>
     </div>
 </form>
 {/if}

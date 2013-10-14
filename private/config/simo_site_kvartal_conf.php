@@ -45,5 +45,7 @@ $__cfg['sms.password'] = 'kirill604';
 
 $__cfg['ncab.path'] = 'ncab/kvartal';
 $__cfg['ncab.ftp'] = 'ftp';
+$__cfg['ncab.startdate'] = 20;
+$__cfg['ncab.finishdate'] = 25;
 
 $__cfg['finder.path'] = 'kvartal';

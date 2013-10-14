@@ -1,14 +1,10 @@
 <div class="page_title">Информацию о приборах учета</div>
 <div class="page_title_und">&nbsp;</div>
 
-<div style="padding:  10px 0 10px 0; text-align: justify; color: #ff0000; font-weight: bold;">Уважаемые жильцы, передавайте показания счетчиков до 26 числа текущего месяца!</div>
-
-{if isset($error_message)}
-    <br/><div style="text-align: justify; color: #ff0000; font-weight: bold;">{$error_message}</div><br/>
-{/if}
+<div style="padding:  10px 0 10px 0; text-align: justify;">Уважаемые жильцы, передавайте показания счетчиков c 20 по 25 число текущего месяца!</div>
 
 {if $meters}
-<form action="?page={$page}" method="post">
+    <form action="?page={$page}" method="post">
     <table class="cab-table">
         <tr>
             <td class="cab-header">Наименование счетчика</td>
@@ -28,7 +24,7 @@
                 </td>
                 <td class="cab-value">
                     <input type="text" name="data[{$jilci->ID}][value]" id="meter_value_{$jilci->ID|replace:'.':'_'}" value="{$pa_meters[{$jilci->ID}].cur_value.value}" style="width: 60px;" onkeyup="calcMeterDiff('{$jilci->ID|replace:'.':'_'}')" {if !$active}disabled="disabled" {/if}/>
-                    <input type="hidden" name="data[{$jilci->ID}][date]" value="{$smarty.now|date_format:"%Y-%m-%d %H:%M:%S"}"/>
+                    <input type="hidden" name="data[{$jilci->ID}][date]" value="{$pa_meters[{$jilci->ID}].prev_value.date}"/>
                 </td>
                 <td class="cab-value">
                     <div id="meter_diff_{$jilci->ID|replace:'.':'_'}">{if $pa_meters[{$jilci->ID}].cur_value.value!=0}{$pa_meters[{$jilci->ID}].cur_value.value - $pa_meters[{$jilci->ID}].prev_value.value}{else}0{/if}</div>
