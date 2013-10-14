@@ -76,8 +76,8 @@ class gkh_content_page_site extends gkh_content_page {
                 $sql = 'UPDATE content_page
                     SET file=CONCAT(IFNULL(file, ""), ";' . $file . '") WHERE id=' . (int) $id;
                 $this->_db->query($sql);
-                $file_title = implode(';', $data['file_title']);
 
+                $file_title = implode(';', $data['file_title']);
                 $sql = 'UPDATE content_page
                     SET file_title=CONCAT(IFNULL(file_title, ""), ";' . $file_title . '") WHERE id=' . (int) $id;
                 $this->_db->query($sql);
@@ -91,7 +91,7 @@ class gkh_content_page_site extends gkh_content_page {
         global $__cfg;
         try {
             $temp = $this->getContentPage($id);
-            simo_functions::_delFile($__cfg['temp.public.dir'] . $fname);
+            simo_functions::_delFile($__cfg['file.upload.dir'] . $fname);
 
             $res_list = '';
             $res_list_title = '';
@@ -129,9 +129,9 @@ class gkh_content_page_site extends gkh_content_page {
                     $tempInfo = pathinfo($file['name']);
 
                     $temp_file_name = $id . '_' . date('d-m-Y-H-i-s') . '_' . $i . '.' . $tempInfo['extension'];
-                    $result = copy($file['tmp_name'], $__cfg['temp.public.dir'] . $temp_file_name);
+                    $result = copy($file['tmp_name'], $__cfg['file.upload.dir'] . $temp_file_name);
 
-                    chmod($__cfg['temp.public.dir'] . $temp_file_name, 0766);
+                    chmod($__cfg['file.upload.dir'] . $temp_file_name, 0766);
                     $resstr .= $temp_file_name . ';';
                     $i++;
                 }
