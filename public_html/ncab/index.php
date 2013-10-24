@@ -102,7 +102,7 @@ try {
         $o_meters = new gkh_meters_cab($account_info['id']);
 
         if (isset($_POST['data'])) {
-            if (!(date('j') >= $__cfg['ncab.startdate'] && date('j') <= $__cfg['ncab.finishdate'])) {
+            if (date('j') >= $__cfg['ncab.startdate'] && date('j') <= $__cfg['ncab.finishdate']) {
                 $o_meters->setMetersValue($_POST['data'], 1);
                 simo_functions::chLocation('?page=' . $page);
                 exit;
