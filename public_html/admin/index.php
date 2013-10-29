@@ -61,15 +61,27 @@ if ($page == 'content_page') {
 }
 
 if ($page == 'messaging') {
-    $o_pa = new gkh_personal_account_site();
+    global $__cfg;
+    $o_sms = new gkh_sms();
 
     if (isset($_POST['data'])) {
-        $o_pa->sendMessage($_POST['data']);
+        $o_sms->sendMessage($_POST['data']);
+
+        simo_session::setVar('isComplite', 1, 'sms');
+
         simo_functions::chLocation('?page=' . $page);
         exit;
     }
 
-    $o_smarty->assign('pa_list', $o_pa->getAllPAForMessage());
+    if (simo_session::existVar('isComplite', 'sms')) {
+        simo_session::clearVar('isComplite', 'sms');
+        $o_smarty->assign('isComplite', 1);
+    } else {
+        $o_smarty->assign('isComplite', 0);
+    }
+
+    $o_smarty->assign('paList', $o_sms->readCSV($__cfg['site.dir'] . '/' . $__cfg['ncab.path'] . '/ftp/debt_list.csv'));
+    $o_smarty->assign('message', $o_sms->readMessageFile($__cfg['site.dir'] . '/' . $__cfg['ncab.path'] . '/ftp/debt_message.txt'));
 }
 
 if ($page == 'news') {
