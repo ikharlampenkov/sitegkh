@@ -9,7 +9,7 @@
 <img src="/ckfinder/userfiles/images/indexfoto.jpg" width="100%"/>
 <table style="width: 100%; height: 100%; margin: 0 auto;">
     <tr>
-        <td style="width: 70%">
+        <td style="width: 70%; vertical-align: top;">
             <div class="inner_block">
                 <div class="rascr_text" style="text-align: justify;">
                     {$conpage_first.content}
