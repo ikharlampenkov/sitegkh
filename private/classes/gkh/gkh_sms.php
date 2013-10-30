@@ -13,20 +13,20 @@
  */
 class gkh_sms extends gkh
 {
-    private $_delim = ';';
+    private $_delimiter = ';';
 
-    public function setDelim($value)
+    public function setDelimiter($value)
     {
-        $this->_delim = $value;
+        $this->_delimiter = $value;
     }
 
-    public function getDelim()
+    public function getDelimiter()
     {
-        return $this->_delim;
+        return $this->_delimiter;
     }
 
     /**
-     * @param      $fileName
+     * @param $fileName
      * @param bool $first учитывать ли первую строку
      *
      * @return array
@@ -34,39 +34,55 @@ class gkh_sms extends gkh
     public function readCSV($fileName, $first = true)
     {
         $retArray = array();
+        $columnName = array();
+        $i = 0;
 
         if ($fileName !== '') {
             $file = fopen($fileName, 'r');
 
             while (($line = fgets($file)) !== false) {
-                $temp_array = preg_split('/' . $this->_delim . '/', $line);
+                $temp_array = preg_split('/' . $this->_delimiter . '/', $line);
 
                 //print_r($temp_array);
 
-                foreach ($temp_array as &$val) {
-                    $val = mb_convert_encoding(str_replace('"', '', $val), 'Windows-1251', 'Windows-1251'); //UTF-8
+                foreach ($temp_array as $key => &$val) {
+                    $val = mb_convert_encoding(str_replace('"', '', $val), 'UTF-8', 'Windows-1251'); //UTF-8 Windows-1251
                     $val = str_replace("\r\n", '', $val);
+
+                    if ($first == true) {
+                        $columnName[$key] = $val;
+                    } else {
+                        $retArray[$i][$columnName[$key]] = $val;
+                    }
                 }
 
-                if ($first) {
+                if ($first == true) {
                     $first = false;
-                } else {
-                    $retArray[] = $temp_array;
                 }
+                $i++;
             }
             fclose($file);
         }
-
         //print_r($retArray);
 
         return $retArray;
     }
 
-    public function saveCSV($fileName, $data)
+    public function saveCSV($fileName, $data, $first = true)
     {
         $strOut = '';
         foreach ($data as $value) {
-            $strOut .= implode($this->_delim, $value) . "\r\n";
+            if ($first == true) {
+                foreach ($value as $key => $empty) {
+                    $strOut .= $key . $this->_delimiter;
+                }
+                $strOut = substr($strOut, 0, strlen($strOut) - 1);
+                $strOut .= "\r\n";
+
+                $first = false;
+            }
+
+            $strOut .= implode($this->_delimiter, $value) . "\r\n";
         }
 
         $file = fopen($fileName, 'w');
@@ -74,11 +90,15 @@ class gkh_sms extends gkh
         fclose($file);
     }
 
-    public function readMessageFile($fileName)
+    public function readMessageFile($fileName, $convert = false)
     {
-        if ($fileName !== '') {
+        if ($fileName !== '' && file_exists($fileName)) {
             $strOut = file_get_contents($fileName);
-            return mb_convert_encoding($strOut, 'UTF-8', 'Windows-1251'); //UTF-8
+            if ($convert) {
+                return mb_convert_encoding($strOut, 'UTF-8', 'Windows-1251'); //UTF-8
+            } else {
+                return $strOut;
+            }
         } else {
             return '';
         }
