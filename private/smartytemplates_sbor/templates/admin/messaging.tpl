@@ -25,12 +25,12 @@
         </tr>
         {foreach from=$paList item=pa}
             <tr>
-                <td class="cab-value" style="width: 30px;"><input id="check" type="checkbox" name="data[pa][{$pa.ls}][check]"/></td>
+                <td class="cab-value" style="width: 30px;"><input id="check" type="checkbox" name="data[pa][{$pa@iteration}][check]"/></td>
                 <td class="cab-value">{$pa.ls}</td>
                 <td class="cab-value">{$pa.address}</td>
                 <td class="cab-value">{$pa.fio}</td>
-                <td class="cab-value">{$pa.phone}<input type="hidden" name="data[pa][{$pa.ls}][phone]" value="{$pa.phone}"/></td>
-                <td class="cab-value">{$pa.debt}<input type="hidden" name="data[pa][{$pa.ls}][debt]" value="{$pa.debt}"/></td>
+                <td class="cab-value">{$pa.phone}<input type="hidden" name="data[pa][{$pa@iteration}][phone]" value="{$pa.phone}"/></td>
+                <td class="cab-value">{$pa.debt}<input type="hidden" name="data[pa][{$pa@iteration}][debt]" value="{$pa.debt}"/></td>
             </tr>
         {/foreach}
     </table>

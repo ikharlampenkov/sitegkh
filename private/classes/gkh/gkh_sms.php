@@ -113,7 +113,7 @@ class gkh_sms extends gkh
                 try {
                     $message = str_replace('%debt%', $value['debt'], $message);
                     $test = $this->_send_sms($value['phone'], mb_convert_encoding($message, 'Windows-1251', 'UTF-8'), $__cfg['sms.login'], $__cfg['sms.password']); //рассылка сообщения
-                    simo_log::logMsg($test);
+                    simo_log::logMsg($value['phone'] . ' response ' . $test);
                 } catch (Exception $e) {
                     simo_exception::registrMsg($e, $this->_debug);
                 }
@@ -132,6 +132,7 @@ class gkh_sms extends gkh
         curl_setopt($ch, CURLOPT_POSTFIELDS, 'Http_username=' . urlencode($login) . '&Http_password=' . urlencode($password) . '&Phone_list=' . $to . '&Message=' . urlencode($msg));
         curl_setopt($ch, CURLOPT_URL, $u);
         $u = trim(curl_exec($ch));
+        //simo_log::logMsg($to . ' ' . $u);
         curl_close($ch);
         return (preg_match('#Http_id\s*=\s*0#i', $u));
     }
