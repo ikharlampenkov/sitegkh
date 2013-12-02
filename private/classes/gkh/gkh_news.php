@@ -146,7 +146,7 @@ class gkh_news extends gkh
         }
     }
 
-    public function getTopNews($category_id)
+    public function getTopNews($category_id, $limit = 5)
     {
         try {
             $sql = 'SELECT news.id, news_category_id, date, news.title, short_text, full_text, is_impotant, news_category.title AS category_title
@@ -157,7 +157,7 @@ class gkh_news extends gkh
             }
 
             $sql .= ' ORDER BY date DESC
-                      LIMIT 5';
+                      LIMIT ' . $limit;
 
             $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
             if (isset($result[0])) {
