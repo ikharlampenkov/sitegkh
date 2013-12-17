@@ -1,31 +1,41 @@
-<h1>Рассылка универсальных сообщений</h1>
+<div class="page_title">Рассылка SMS-сообщений</div>
+<div class="page_title_und">&nbsp;</div>
+
+<br/>
+
+{if $isComplite}
+    <div style="font-weight: bold;">Ваша заявка отправлена</div>
+    <br/>
+{/if}
 
 <form action="?page={$page}" method="post">
 
-    <div>Сообщение</div>
-    <textarea name="data[message]"></textarea>
-    <br /><br />
+    <div style="font-weight: bold;">Сообщение</div>
+    <textarea name="data[message]" rows="4">{$message}</textarea>
+    <br/><br/>
 
-    <table border="1">
+    <a href="javascript::void(0);" onclick="checkAll();">Выбрать все</a>
+
+    <table class="cab-table" id="phoneList">
         <tr>
-            <td width="25" align="center">&nbsp;</td>
-            <td>лицевой счет</td>
-            <td>улица</td>
-            <td>дом</td>
-            <td>квартира</td>     
-            <td>телефон</td>           
+            <td class="cab-header">&nbsp;</td>
+            <td class="cab-header">Лицевой счет</td>
+            <td class="cab-header">Адрес</td>
+            <td class="cab-header">ФИО</td>
+            <td class="cab-header">Телефон</td>
+            <td class="cab-header">Задолженность</td>
         </tr>
-{foreach from=$pa_list item=pa}
-        <tr>
-            <td><input id="check" type="checkbox" name="data[debts][{$pa.id}]" /></td>
-            <td>{$pa.id}</td>
-            <td>{$pa.house.street}</td>
-            <td>{$pa.house.number}{$pa.house.subnumber}</td>
-            <td>{$pa.apartment}</td>
-            <td>{$pa.phone}</td>
-        </tr>
-{/foreach}
+        {foreach from=$paList item=pa}
+            <tr>
+                <td class="cab-value" style="width: 30px;"><input id="check" type="checkbox" name="data[pa][{$pa@iteration}][check]"/></td>
+                <td class="cab-value">{$pa.ls}</td>
+                <td class="cab-value">{$pa.address}</td>
+                <td class="cab-value">{$pa.fio}</td>
+                <td class="cab-value">{$pa.phone}<input type="hidden" name="data[pa][{$pa@iteration}][phone]" value="{$pa.phone}"/></td>
+                <td class="cab-value">{$pa.debt}<input type="hidden" name="data[pa][{$pa@iteration}][debt]" value="{$pa.debt}"/></td>
+            </tr>
+        {/foreach}
     </table>
 
-    <input id="save" name="save" type="submit" value="Разослать" />
+    <input id="save" name="save" type="submit" value="Разослать"/>
 </form>

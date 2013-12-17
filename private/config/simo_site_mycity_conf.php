@@ -41,7 +41,9 @@ $__cfg['file.upload.dir'] = $__cfg['site.dir'] . '/temp_files/';
 $__cfg['sms.login'] = 'sibdnevnik';
 $__cfg['sms.password'] = 'kirill604';
 
-$__cfg['ncab.path'] = 'ncab';
+$__cfg['ncab.path'] = 'ncab/mycity';
 $__cfg['ncab.ftp'] = 'ftp';
+$__cfg['ncab.startdate'] = 1;
+$__cfg['ncab.finishdate'] = 27;
 
 $__cfg['finder.path'] = 'mycity';
