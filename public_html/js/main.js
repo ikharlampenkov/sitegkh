@@ -59,7 +59,7 @@ function calcMeterDiff(id) {
         $('#note').css('display', 'none');
 
         var active = true;
-        $('div[id^="meter_diff_"]').each(function() {
+        $('div[id^="meter_diff_"]').each(function () {
             if (parseFloat($(this).html()) < 0) {
                 active = false;
             }
@@ -78,6 +78,11 @@ function showQuestionForm() {
         $('#questionForm').css("display", "none");
     }
 }
+
+function checkAll() {
+    $('#phoneList input[type=checkbox]').attr('checked', 'checked');
+}
+
 
 $(document).ready(function () {
     $('#mainmenu .menu li').hover(

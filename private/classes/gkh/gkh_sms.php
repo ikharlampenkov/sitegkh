@@ -108,17 +108,24 @@ class gkh_sms extends gkh
     {
         global $__cfg;
         $message = $data['message'];
+        $counter = 0;
         foreach ($data['pa'] as $key => $value) {
             if (isset($value['check'])) {
                 try {
                     $message = str_replace('%debt%', $value['debt'], $message);
                     $test = $this->_send_sms($value['phone'], mb_convert_encoding($message, 'Windows-1251', 'UTF-8'), $__cfg['sms.login'], $__cfg['sms.password']); //рассылка сообщения
                     simo_log::logMsg($value['phone'] . ' response ' . $test);
+
+                    if ($test == 0) {
+                        $counter++;
+                    }
                 } catch (Exception $e) {
                     simo_exception::registrMsg($e, $this->_debug);
                 }
             }
         }
+
+        simo_log::logMsg('Дата: ' . date('d-m-Y') . ' отправлено sms ' . $counter);
     }
 
     private function _send_sms($to, $msg, $login, $password)
@@ -134,7 +141,12 @@ class gkh_sms extends gkh
         $u = trim(curl_exec($ch));
         //simo_log::logMsg($to . ' ' . $u);
         curl_close($ch);
-        return (preg_match('#Http_id\s*=\s*0#i', $u));
+        $result = preg_match('#Http_id\s*=\s*0#i', $u);
+
+        if ($result != 0) {
+            simo_log::logMsg('Error with send SMS to: ' . $to . ' Message: ' . $u);
+        }
+        return $result;
     }
 
 }
