@@ -14,10 +14,12 @@ td {
 #mainLayout {
     width: 996px;
     position: relative;
-    left: 50%;
+    /*left: 50%;
     margin-left: -498px;
+    */
     background-color: #eaeaea;
     height: 100%;
+    margin: 0 auto;
 }
 
 #mainTable {
@@ -344,6 +346,7 @@ a:hover {
     margin-top: 19px;
     padding-bottom: 29px;
     padding-right: 21px;
+    min-height: 500px;
 }
 
 #smallLogo {
