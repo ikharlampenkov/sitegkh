@@ -14,7 +14,9 @@
     <textarea name="data[message]" rows="4">{$message}</textarea>
     <br/><br/>
 
-    <table class="cab-table">
+    <a href="javascript::void(0);" onclick="checkAll();">Выбрать все</a>
+
+    <table class="cab-table" id="phoneList">
         <tr>
             <td class="cab-header">&nbsp;</td>
             <td class="cab-header">Лицевой счет</td>
