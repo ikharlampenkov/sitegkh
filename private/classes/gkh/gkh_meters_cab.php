@@ -130,7 +130,7 @@ class gkh_meters_cab extends gkh
                     $value['date'] = date('Y-m-d H:i:s', strtotime($value['date']));
                     $sql
                         = 'REPLACE meters_value_cab(personal_account_id, num, date, value, is_human)
-                                      VALUES(' . $this->_personal_account . ', "' . $meter_id . '", "' . $value['date'] . '", ' . $value['value'] . ', ' . $isHuman . ')';
+                                      VALUES(' . $this->_personal_account . ', "' . $meter_id . '", "' . $value['date'] . '", ' . str_replace(',', '.', $value['value']) . ', ' . $isHuman . ')';
                     //print_r($sql);
                     $this->_db->query($sql);
                 }
