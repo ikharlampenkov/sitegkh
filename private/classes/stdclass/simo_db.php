@@ -87,7 +87,7 @@ class simo_db {
 
             return $result;
         } catch (simo_exception $s_e) {
-            simo_log::logMsg('Can`t query ' . $query, simo_log::SIMO_LOG_ERROR);
+            simo_log::logMsg('Can`t query ' . $query . ' in db ' . $this->_dsn['db'], simo_log::SIMO_LOG_ERROR);
             throw new Exception('Can`t query ' . $query);
         }
     }
