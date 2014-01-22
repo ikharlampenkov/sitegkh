@@ -112,9 +112,9 @@ class gkh_sms extends gkh
         foreach ($data['pa'] as $key => $value) {
             if (isset($value['check'])) {
                 try {
-                    $message = str_replace('%debt%', $value['debt'], $message);
-                    $test = $this->_send_sms($value['phone'], mb_convert_encoding($message, 'Windows-1251', 'UTF-8'), $__cfg['sms.login'], $__cfg['sms.password']); //рассылка сообщения
-                    simo_log::logMsg($value['phone'] . ' response ' . $test);
+                    $messageSms = str_replace('%debt%', $value['debt'], $message);
+                    $test = $this->_send_sms($value['phone'], mb_convert_encoding($messageSms, 'Windows-1251', 'UTF-8'), $__cfg['sms.login'], $__cfg['sms.password']); //рассылка сообщения
+                    simo_log::logMsg('Message ' . $messageSms . ' to ' . $value['phone'] . ' response ' . $test);
 
                     if ($test == 0) {
                         $counter++;
