@@ -31,7 +31,7 @@ $__cfg['smarty.default.keyword'] = '';
 $__cfg['smarty.encoding'] = 'utf-8';
 
 $__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html';
-$__cfg['site.url'] = 'http://квартиры-кемерова.рф/';
+$__cfg['site.url'] = 'http://квартиры-кемерова42.рф/';
 
 $__cfg['temp.dir'] = $__cfg['site.main.dir'] . 'private/temp/';
 

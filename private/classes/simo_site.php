@@ -44,7 +44,7 @@ if ($serverName == 'xn--21-kmcm3c.xn--p1ai') {
     include_once $config_path . 'simo_site_shultc_conf.php';
 } elseif ($serverName == 'xn----itbqkpljs.xn--f1aefjego4ag.xn--p1ai' || $serverName == 'xn----itbqkpljs.xn--p1ai') {
     include_once $config_path . 'simo_site_center_conf.php';
-} elseif ($serverName == 'xn----7sbbfcravpexztbfy9m.xn--p1ai') {
+} elseif ($serverName == 'xn---42-5cdbjcxa1ate1a3axbf2a7o.xn--p1ai') { //xn----7sbbfcravpexztbfy9m.xn--p1ai
     include_once $config_path . 'simo_site_kvkem_conf.php';
 } elseif ($serverName == 'uk-zles42.ru') {
     include_once $config_path . 'simo_site_zles_conf.php';
