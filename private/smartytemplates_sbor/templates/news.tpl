@@ -7,7 +7,7 @@
     
 
 <div>{$news.date|date_format:"%d.%m.%Y"}&nbsp;{$news.title}</div><br />
-<div style="text-align: justify;">{$news.full_text|nl2br}</div>
+<div style="text-align: justify;">{$news.full_text}</div>
 
 <br/><br/>
 
