@@ -44,7 +44,7 @@
 <table>
     <tr>
         <td id="pager">Страница: 
-        {section name=pager loop={$page_info.page_count} start=0}
+        {section name=pager loop=$page_info.page_count start=0}
         {if $smarty.section.pager.index==$cur_page}<b>{$smarty.section.pager.index+1}</b>{else}<a href={$siteurl}?page={$page}&action={$action}&pager={$smarty.section.pager.index}&category={$news.news_category_id} >{$smarty.section.pager.index+1}</a> {/if}
         {/section}   
         </td>
@@ -65,7 +65,7 @@
 <table>
     <tr>
         <td id="pager">Страница: 
-        {section name=pager loop={$page_info.page_count} start=0}
+        {section name=pager loop=$page_info.page_count start=0}
         {if $smarty.section.pager.index==$cur_page}<b>{$smarty.section.pager.index+1}</b>{else}<a href={$siteurl}?page={$page}&action={$action}&pager={$smarty.section.pager.index}&category={$news.news_category_id} >{$smarty.section.pager.index+1}</a> {/if}
         {/section}   
         </td>
