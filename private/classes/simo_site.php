@@ -68,6 +68,8 @@ if ($serverName == 'xn--21-kmcm3c.xn--p1ai') {
     include_once $config_path . 'simo_site_reu10_conf.php';
 } elseif ($serverName == 'xn--7-4tbj3b.xn--p1ai') {
     include_once $config_path . 'simo_site_reu7_conf.php';
+} elseif ($serverName == 'xn----8sbahicdrxh6bgnvs0s.xn--p1ai') {
+    include_once $config_path . 'simo_site_przvd_conf.php'; //ук-предзаводская.рф
 } else {
     include_once $config_path . 'simo_site_conf.php';
 }
