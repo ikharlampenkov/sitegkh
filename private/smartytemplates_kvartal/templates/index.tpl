@@ -5,14 +5,9 @@
         {include file="$page.tpl"}
     </div>
 {else}
-
-{*if $domen=='xn--19-kmcm3c.xn--p1ai'}
-                <p> </p>
-                <center><img src="/i/otkritka.jpg" /></center>
-                {/if*}
     <table>
         <tr>
-            <td style="width: 60%; padding: 0px;"> {* 404px; *}
+            <td style="width: 60%; padding: 0;"> {* 404px; *}
                 <div style="padding: 20px;">
 
                     <div class="rzdtitle">Раскрытие информации</div>
@@ -61,7 +56,7 @@
             </td>
         </tr>
         <tr>
-            <td style="height: 380px; background-image: url(i/derevoleft.jpg); background-repeat: no-repeat; background-position: left bottom; padding: 0px;">
+            <td style="height: 380px; background-image: url(/i/derevoleft.jpg); background-repeat: no-repeat; background-position: left bottom; padding: 0;">
                 <div style="padding: 20px;">
 
                     {*<div class="rzdtitle">Жизненные ситуации</div>

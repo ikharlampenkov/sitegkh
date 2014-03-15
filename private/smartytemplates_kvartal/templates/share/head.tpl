@@ -7,7 +7,7 @@
     <link title="Screen" rel="stylesheet" type="text/css" href="/css/main.css" media="all"/>
     <link title="Screen" rel="stylesheet" type="text/css" href="/js/jqueryui/css/redmond/jquery-ui.css"/>
 
-    <script type="text/javascript" language="javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" language="javascript" src="/js/jquery.placeholder.min.js"></script>
     <script type="text/javascript" language="javascript" src="/js/main.js"></script>
     <script type="text/javascript" language="javascript" src="/js/common.js"></script>
@@ -88,11 +88,11 @@
                                             <td colspan="3" style="width: 368px; height: 15px; background-image: url(/i/verh.jpg); background-repeat: no-repeat; background-position: bottom; padding: 0px;"></td>
                                         </tr>
                                         <tr>
-                                            <td style="width: 14px; height: 261px; background: url(/i/left.jpg) no-repeat bottom; padding: 0px;"></td>
-                                            <td style="width: 340px; height: 261px; padding: 0px; vertical-align: middle;">
-                                                {*<img src="/i/yk_molod.png" alt="{$title}"/>*}
+                                            <td style="width: 14px; height: 261px; background: url(/i/left.jpg) no-repeat bottom; padding: 0;"></td>
+                                            <td style="width: 340px; height: 261px; padding: 0; vertical-align: middle;">
+                                                <img src="/i/yk_kv_premium.jpg" alt="{$title}"/>
                                             </td>
-                                            <td style="width: 14px; height: 261px; background: url(/i/right.jpg) no-repeat bottom; padding: 0px;"></td>
+                                            <td style="width: 14px; height: 261px; background: url(/i/right.jpg) no-repeat bottom; padding: 0;"></td>
                                         </tr>
                                         <tr>
                                             <td colspan="3" style="width: 368px; height: 69px; background: url(/i/niz.jpg) no-repeat bottom; padding: 0px;"></td>
@@ -121,4 +121,4 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding: 0px;">
+                    <td style="padding: 0;">
