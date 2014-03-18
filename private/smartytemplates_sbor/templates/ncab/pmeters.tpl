@@ -24,7 +24,7 @@
                 </td>
                 <td class="cab-value">
                     <input type="text" name="data[{$jilci->ID}][value]" id="meter_value_{$jilci->ID|replace:'.':'_'}" value="{$pa_meters[{$jilci->ID}].cur_value.value}" style="width: 60px;" onkeyup="calcMeterDiff('{$jilci->ID|replace:'.':'_'}')"/>
-                    <input type="hidden" name="data[{$jilci->ID}][date]" value="{$pa_meters[{$jilci->ID}].prev_value.date}"/>
+                    <input type="hidden" name="data[{$jilci->ID}][date]" value="{$smarty.now|date_format:"%Y-%m-%d %H:%M:%S"}"/>
                 </td>
                 <td class="cab-value">
                     <div id="meter_diff_{$jilci->ID|replace:'.':'_'}">{if $pa_meters[{$jilci->ID}].cur_value.value!=0}{$pa_meters[{$jilci->ID}].cur_value.value - $pa_meters[{$jilci->ID}].prev_value.value}{else}0{/if}</div>
