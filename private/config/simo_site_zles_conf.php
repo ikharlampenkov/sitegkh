@@ -31,7 +31,7 @@ $__cfg['smarty.default.keyword'] = '';
 $__cfg['smarty.encoding'] = 'utf-8';
 
 $__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html';
-$__cfg['site.url'] = 'http://uk-zles42.ru/';
+$__cfg['site.url'] = 'http://ukzles42.ru/';
 
 $__cfg['temp.dir'] = $__cfg['site.main.dir'] . 'private/temp/';
 

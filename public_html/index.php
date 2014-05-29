@@ -285,7 +285,7 @@ if ($o_user->isLogin()) {
     $o_content_page = new gkh_content_page_site();
     $o_smarty->assign('conpage_first', $o_content_page->getContentPage('main'));
 
-    if ($serverName == 'uk-zles42.ru' || $serverName == 'xn----8sblrfbqjg9bbj5dye.xn--p1ai') {
+    if ($serverName == 'ukzles42.ru' || $serverName == 'xn----8sblrfbqjg9bbj5dye.xn--p1ai') {
         $o_smarty->assign('conpage_service', $o_content_page->getContentPage('main_service'));
         $o_smarty->assign('conpage_educational', $o_content_page->getContentPage('main_educational'));
     } elseif ($serverName == 'xn----stbeplh5f.xn--p1ai' || $serverName == 'xn---1-kmcm3c.xn--p1ai') {
