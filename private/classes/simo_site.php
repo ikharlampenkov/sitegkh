@@ -56,7 +56,7 @@ if ($serverName == 'xn--21-kmcm3c.xn--p1ai') {
     include_once $config_path . 'simo_site_kvartal_conf.php';
 } elseif ($serverName == 'xn----stbeplh5f.xn--p1ai') {
     include_once $config_path . 'simo_site_plus_conf.php';
-} elseif ($serverName == 'xn---1-kmcm3c.xn--p1ai') {
+} elseif ($serverName == 'xn----1-redaapy3g.xn--p1ai') {
     include_once $config_path . 'simo_site_reu1_conf.php';
 } elseif ($serverName == 'xn----8sblrfbqjg9bbj5dye.xn--p1ai') {
     include_once $config_path . 'simo_site_domashni_conf.php';

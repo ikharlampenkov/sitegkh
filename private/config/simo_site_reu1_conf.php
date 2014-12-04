@@ -31,7 +31,7 @@ $__cfg['smarty.default.keyword'] = '';
 $__cfg['smarty.encoding'] = 'utf-8';
 
 $__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html';
-$__cfg['site.url'] = 'http://рэу-1.рф/';
+$__cfg['site.url'] = 'http://ооо-рэу-1.рф/';
 //рэу-1.рф
 //xn---1-kmcm3c.xn--p1ai
 
