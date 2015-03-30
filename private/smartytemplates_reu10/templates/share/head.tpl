@@ -10,7 +10,7 @@
 
     <script type="text/javascript" language="javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" language="javascript" src="/js/jquery.placeholder.min.js"></script>
-    <script type="text/javascript" language="javascript" src="/js/highslide/highslide.min.js"></script>
+    {* <script type="text/javascript" language="javascript" src="/js/highslide/highslide.min.js"></script> *}
     <script type="text/javascript" language="javascript" src="/js/reu10.js"></script>
 
     <script type="text/javascript" language="javascript" src="/js/common.js"></script>
