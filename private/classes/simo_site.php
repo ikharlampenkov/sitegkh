@@ -70,6 +70,10 @@ if ($serverName == 'xn--21-kmcm3c.xn--p1ai') {
     include_once $config_path . 'simo_site_reu7_conf.php';
 } elseif ($serverName == 'xn----8sbahicdrxh6bgnvs0s.xn--p1ai') {
     include_once $config_path . 'simo_site_przvd_conf.php'; //ук-предзаводская.рф
+} elseif ($serverName == 'nashdom42.ru') {
+    include_once $config_path . 'simo_site_ndom_conf.php'; //nashdom42.ru
+} elseif ($serverName == 'xn----btbaoaz1adaahscef0oqc.xn--p1ai') {
+    include_once $config_path . 'simo_site_sbor2_conf.php'; //ооо-серебряныйбор.рф
 } else {
     include_once $config_path . 'simo_site_conf.php';
 }

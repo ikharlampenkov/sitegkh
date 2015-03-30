@@ -272,7 +272,7 @@ if ($o_user->isLogin()) {
 
     $o_news = new gkh_news();
     //$o_smarty->assign('news_list', $o_news->getImportantNews(-1));
-    if ($serverName == 'xn----btbaoazc2alocedz3kqc.xn--p1ai') {
+    if ($serverName == 'xn----btbaoazc2alocedz3kqc.xn--p1ai' || $serverName == 'xn----btbaoaz1adaahscef0oqc.xn--p1ai') {
         $o_smarty->assign('news_list', $o_news->getTopNews(gkh_news::ANY_CATEGORY, 10));
     } else {
         $o_smarty->assign('news_list', $o_news->getTopNews(gkh_news::ANY_CATEGORY));

@@ -1,16 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.5
+-- version 4.1.14.6
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Мар 13 2014 г., 08:23
--- Версия сервера: 5.0.77-log
--- Версия PHP: 5.3.18
+-- Время создания: Мар 30 2015 г., 16:42
+-- Версия сервера: 5.5.40-36.1
+-- Версия PHP: 5.3.29
 
-SET FOREIGN_KEY_CHECKS=0;
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT=0;
-START TRANSACTION;
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -33,7 +30,7 @@ DROP TABLE IF EXISTS `acl`;
 CREATE TABLE IF NOT EXISTS `acl` (
   `menu_id` int(10) unsigned NOT NULL,
   `role` varchar(20) NOT NULL,
-  PRIMARY KEY  (`menu_id`,`role`),
+  PRIMARY KEY (`menu_id`,`role`),
   KEY `fk_acl_user_role1` (`role`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -45,13 +42,13 @@ CREATE TABLE IF NOT EXISTS `acl` (
 
 DROP TABLE IF EXISTS `content_page`;
 CREATE TABLE IF NOT EXISTS `content_page` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `page_title` varchar(40) NOT NULL COMMENT 'английское название для системы',
   `title` varchar(255) NOT NULL,
   `description` text,
   `content` longtext,
-  `file` varchar(255) default NULL,
-  PRIMARY KEY  (`id`),
+  `file` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
   UNIQUE KEY `page_title_UNIQUE` (`page_title`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=92 ;
 
@@ -111,13 +108,13 @@ INSERT INTO `content_page` (`id`, `page_title`, `title`, `description`, `content
 
 DROP TABLE IF EXISTS `document`;
 CREATE TABLE IF NOT EXISTS `document` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `parrent_id` int(10) unsigned NOT NULL,
   `title` varchar(255) NOT NULL,
   `short_text` text,
-  `file` varchar(255) default NULL,
+  `file` varchar(255) DEFAULT NULL,
   `is_folder` tinyint(1) NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `fk_document_document1` (`parrent_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
@@ -129,9 +126,9 @@ CREATE TABLE IF NOT EXISTS `document` (
 
 DROP TABLE IF EXISTS `emails`;
 CREATE TABLE IF NOT EXISTS `emails` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `value` text NOT NULL,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
@@ -149,15 +146,15 @@ INSERT INTO `emails` (`id`, `value`) VALUES
 
 DROP TABLE IF EXISTS `faq`;
 CREATE TABLE IF NOT EXISTS `faq` (
-  `id` int(10) unsigned NOT NULL auto_increment,
-  `parrent_id` int(10) unsigned NOT NULL default '0',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `parrent_id` int(10) unsigned NOT NULL DEFAULT '0',
   `question` text NOT NULL,
   `answer` text,
-  `is_folder` tinyint(1) NOT NULL default '0',
-  `is_situation` tinyint(1) NOT NULL default '0',
-  `is_moderate` tinyint(1) NOT NULL default '0',
-  `img` varchar(255) default NULL,
-  PRIMARY KEY  (`id`)
+  `is_folder` tinyint(1) NOT NULL DEFAULT '0',
+  `is_situation` tinyint(1) NOT NULL DEFAULT '0',
+  `is_moderate` tinyint(1) NOT NULL DEFAULT '0',
+  `img` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
@@ -183,16 +180,16 @@ INSERT INTO `faq` (`id`, `parrent_id`, `question`, `answer`, `is_folder`, `is_si
 
 DROP TABLE IF EXISTS `house`;
 CREATE TABLE IF NOT EXISTS `house` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `street` varchar(50) NOT NULL,
   `number` int(10) unsigned NOT NULL,
-  `subnumber` varchar(3) default NULL,
-  `area` decimal(9,2) unsigned default NULL,
-  `file_repair_plan` varchar(255) default NULL,
-  `file_costs_income` varchar(255) default NULL,
-  `file_performed_repair` varchar(255) default NULL,
-  `is_street` tinyint(1) NOT NULL default '0',
-  PRIMARY KEY  (`id`)
+  `subnumber` varchar(3) DEFAULT NULL,
+  `area` decimal(9,2) unsigned DEFAULT NULL,
+  `file_repair_plan` varchar(255) DEFAULT NULL,
+  `file_costs_income` varchar(255) DEFAULT NULL,
+  `file_performed_repair` varchar(255) DEFAULT NULL,
+  `is_street` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -203,10 +200,10 @@ CREATE TABLE IF NOT EXISTS `house` (
 
 DROP TABLE IF EXISTS `license`;
 CREATE TABLE IF NOT EXISTS `license` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `description` varchar(255) NOT NULL,
-  `img` varchar(255) default NULL,
-  PRIMARY KEY  (`id`)
+  `img` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -224,12 +221,12 @@ INSERT INTO `license` (`id`, `description`, `img`) VALUES
 
 DROP TABLE IF EXISTS `management_company`;
 CREATE TABLE IF NOT EXISTS `management_company` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `domen` varchar(45) NOT NULL,
   `title` varchar(255) NOT NULL,
   `version` varchar(10) NOT NULL,
   `password` varchar(16) NOT NULL,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='управляющая компания' AUTO_INCREMENT=2 ;
 
 --
@@ -247,14 +244,14 @@ INSERT INTO `management_company` (`id`, `domen`, `title`, `version`, `password`)
 
 DROP TABLE IF EXISTS `menu`;
 CREATE TABLE IF NOT EXISTS `menu` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `module_id` int(10) unsigned NOT NULL,
   `title` varchar(45) NOT NULL,
   `eng_title` varchar(45) NOT NULL,
-  `param_name` varchar(45) default NULL,
-  `param_value` varchar(45) default NULL,
+  `param_name` varchar(45) DEFAULT NULL,
+  `param_value` varchar(45) DEFAULT NULL,
   `parent_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `fk_menu_module` (`module_id`),
   KEY `fk_menu_menu1` (`parent_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
@@ -274,11 +271,11 @@ INSERT INTO `menu` (`id`, `module_id`, `title`, `eng_title`, `param_name`, `para
 
 DROP TABLE IF EXISTS `meters`;
 CREATE TABLE IF NOT EXISTS `meters` (
-  `id` int(10) unsigned NOT NULL auto_increment,
-  `title` varchar(45) default NULL,
-  `rate` decimal(12,2) unsigned default NULL,
-  `unit` varchar(10) default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(45) DEFAULT NULL,
+  `rate` decimal(12,2) unsigned DEFAULT NULL,
+  `unit` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
@@ -300,7 +297,7 @@ DROP TABLE IF EXISTS `meters_to_account`;
 CREATE TABLE IF NOT EXISTS `meters_to_account` (
   `personal_account_id` int(10) unsigned NOT NULL,
   `meters_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`personal_account_id`,`meters_id`),
+  PRIMARY KEY (`personal_account_id`,`meters_id`),
   KEY `fk_meters_to_account_meters1` (`meters_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -326,8 +323,8 @@ CREATE TABLE IF NOT EXISTS `meters_value` (
   `personal_account_id` int(10) unsigned NOT NULL,
   `meters_id` int(10) unsigned NOT NULL,
   `date` date NOT NULL,
-  `value` decimal(10,3) default NULL,
-  PRIMARY KEY  (`personal_account_id`,`meters_id`,`date`),
+  `value` decimal(10,3) DEFAULT NULL,
+  PRIMARY KEY (`personal_account_id`,`meters_id`,`date`),
   KEY `fk_meters_value_meters1` (`meters_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -353,12 +350,12 @@ INSERT INTO `meters_value` (`personal_account_id`, `meters_id`, `date`, `value`)
 
 DROP TABLE IF EXISTS `module`;
 CREATE TABLE IF NOT EXISTS `module` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `eng_title` varchar(255) NOT NULL,
   `files` text,
   `db_tables` text,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
@@ -378,14 +375,14 @@ INSERT INTO `module` (`id`, `title`, `eng_title`, `files`, `db_tables`) VALUES
 
 DROP TABLE IF EXISTS `news`;
 CREATE TABLE IF NOT EXISTS `news` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `news_category_id` int(10) unsigned NOT NULL,
   `date` datetime NOT NULL,
   `title` varchar(255) NOT NULL,
   `short_text` text,
   `full_text` text,
-  `is_impotant` tinyint(1) NOT NULL default '0',
-  PRIMARY KEY  (`id`),
+  `is_impotant` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
   KEY `fk_news_news_category1` (`news_category_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
@@ -397,9 +394,9 @@ CREATE TABLE IF NOT EXISTS `news` (
 
 DROP TABLE IF EXISTS `news_category`;
 CREATE TABLE IF NOT EXISTS `news_category` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
@@ -421,13 +418,13 @@ INSERT INTO `news_category` (`id`, `title`) VALUES
 
 DROP TABLE IF EXISTS `news_comment`;
 CREATE TABLE IF NOT EXISTS `news_comment` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `news_id` int(10) unsigned NOT NULL,
   `date` datetime NOT NULL,
-  `nickname` varchar(15) default NULL,
+  `nickname` varchar(15) DEFAULT NULL,
   `text` text NOT NULL,
-  `is_moderated` tinyint(1) NOT NULL default '0',
-  PRIMARY KEY  (`id`,`news_id`),
+  `is_moderated` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`,`news_id`),
   KEY `fk_news_comment_news1` (`news_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
@@ -439,12 +436,12 @@ CREATE TABLE IF NOT EXISTS `news_comment` (
 
 DROP TABLE IF EXISTS `payments_debt`;
 CREATE TABLE IF NOT EXISTS `payments_debt` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `date` date NOT NULL,
-  `payment` decimal(8,2) default NULL,
-  `debt` decimal(8,2) default NULL,
+  `payment` decimal(8,2) DEFAULT NULL,
+  `debt` decimal(8,2) DEFAULT NULL,
   `personal_account_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `fk_payments_debt_personal_account1` (`personal_account_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
@@ -456,15 +453,15 @@ CREATE TABLE IF NOT EXISTS `payments_debt` (
 
 DROP TABLE IF EXISTS `personal`;
 CREATE TABLE IF NOT EXISTS `personal` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `fio` varchar(100) NOT NULL,
-  `foto` varchar(255) default NULL,
-  `is_leaders` tinyint(1) NOT NULL default '0',
-  `department` varchar(255) default NULL,
-  `position` varchar(255) default NULL,
-  `email` varchar(60) default NULL,
+  `foto` varchar(255) DEFAULT NULL,
+  `is_leaders` tinyint(1) NOT NULL DEFAULT '0',
+  `department` varchar(255) DEFAULT NULL,
+  `position` varchar(255) DEFAULT NULL,
+  `email` varchar(60) DEFAULT NULL,
   `sometext` text,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
@@ -482,15 +479,15 @@ INSERT INTO `personal` (`id`, `fio`, `foto`, `is_leaders`, `department`, `positi
 
 DROP TABLE IF EXISTS `personal_account`;
 CREATE TABLE IF NOT EXISTS `personal_account` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(10) unsigned NOT NULL,
   `house_id` int(10) unsigned NOT NULL,
-  `apartment` int(10) unsigned default NULL,
-  `fio` varchar(45) default NULL,
-  `password` varchar(45) default NULL,
-  `phone` varchar(35) default NULL,
-  `ls` varchar(255) default NULL,
-  PRIMARY KEY  (`id`),
+  `apartment` int(10) unsigned DEFAULT NULL,
+  `fio` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  `phone` varchar(35) DEFAULT NULL,
+  `ls` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
   KEY `fk_personal_account_user1` (`user_id`),
   KEY `fk_personal_account_house1` (`house_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
@@ -511,12 +508,12 @@ INSERT INTO `personal_account` (`id`, `user_id`, `house_id`, `apartment`, `fio`,
 
 DROP TABLE IF EXISTS `phones`;
 CREATE TABLE IF NOT EXISTS `phones` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `phone_code` varchar(5) NOT NULL,
   `phone` varchar(9) NOT NULL,
   `comment` varchar(50) NOT NULL,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
@@ -534,15 +531,15 @@ INSERT INTO `phones` (`id`, `title`, `phone_code`, `phone`, `comment`) VALUES
 
 DROP TABLE IF EXISTS `tech_support_post`;
 CREATE TABLE IF NOT EXISTS `tech_support_post` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `ticket_id` int(10) unsigned NOT NULL,
   `question` text NOT NULL,
   `date_question` datetime NOT NULL,
   `answer` text,
-  `date_answer` datetime default NULL,
+  `date_answer` datetime DEFAULT NULL,
   `file` text,
   `answer_file` text,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `fk_tech_support_post_tech_support_ticket1` (`ticket_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
@@ -571,13 +568,13 @@ INSERT INTO `tech_support_post` (`id`, `ticket_id`, `question`, `date_question`,
 
 DROP TABLE IF EXISTS `tech_support_ticket`;
 CREATE TABLE IF NOT EXISTS `tech_support_ticket` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `personal_account_id` int(10) unsigned NOT NULL,
   `title` varchar(255) NOT NULL,
   `date` datetime NOT NULL,
-  `category` varchar(20) default NULL,
+  `category` varchar(20) DEFAULT NULL,
   `ticket_status_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `fk_tech_support_ticket_personal_account1` (`personal_account_id`),
   KEY `fk_tech_support_ticket_ticket_state1` (`ticket_status_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
@@ -603,10 +600,10 @@ INSERT INTO `tech_support_ticket` (`id`, `personal_account_id`, `title`, `date`,
 
 DROP TABLE IF EXISTS `tech_support_ticket_status`;
 CREATE TABLE IF NOT EXISTS `tech_support_ticket_status` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(45) NOT NULL,
-  `rating` int(10) unsigned default NULL,
-  PRIMARY KEY  (`id`)
+  `rating` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -625,11 +622,11 @@ INSERT INTO `tech_support_ticket_status` (`id`, `title`, `rating`) VALUES
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `login` varchar(45) NOT NULL,
   `password` varchar(45) NOT NULL,
   `role` varchar(20) NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   UNIQUE KEY `login_UNIQUE` (`login`),
   KEY `role` (`role`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
@@ -653,7 +650,7 @@ DROP TABLE IF EXISTS `user_role`;
 CREATE TABLE IF NOT EXISTS `user_role` (
   `title` varchar(20) NOT NULL,
   `ru_title` varchar(40) NOT NULL,
-  PRIMARY KEY  (`title`)
+  PRIMARY KEY (`title`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -673,15 +670,15 @@ INSERT INTO `user_role` (`title`, `ru_title`) VALUES
 
 DROP TABLE IF EXISTS `vacancy`;
 CREATE TABLE IF NOT EXISTS `vacancy` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `position` varchar(255) NOT NULL,
   `requirements` text,
-  `salary` varchar(100) default NULL,
+  `salary` varchar(100) DEFAULT NULL,
   `some_text` text,
-  `contact` varchar(255) default NULL,
-  `who` varchar(255) default NULL,
-  `is_active` tinyint(1) NOT NULL default '1',
-  PRIMARY KEY  (`id`)
+  `contact` varchar(255) DEFAULT NULL,
+  `who` varchar(255) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
@@ -694,8 +691,6 @@ CREATE TABLE IF NOT EXISTS `vacancy` (
 ALTER TABLE `acl`
   ADD CONSTRAINT `fk_acl_menu1` FOREIGN KEY (`menu_id`) REFERENCES `menu` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_acl_user_role1` FOREIGN KEY (`role`) REFERENCES `user_role` (`title`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-SET FOREIGN_KEY_CHECKS=1;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
