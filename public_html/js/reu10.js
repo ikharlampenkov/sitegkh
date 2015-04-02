@@ -6,9 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
-hs.graphicsDir = 'js/highslide/graphics/';
-hs.wrapperClassName = 'wide-border';
-hs.showCredits = false;
+//hs.graphicsDir = 'js/highslide/graphics/';
+//hs.wrapperClassName = 'wide-border';
+//hs.showCredits = false;
 
 function showTime() {
     var d = new Date();
