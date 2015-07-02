@@ -17,9 +17,9 @@ $__cfg['log.level'] = 2;
 
 $__cfg['system.debug'] = false;
 
-$__cfg['smarty.templates'] = $__cfg['site.main.dir'] . 'private/smartytemplates_site/templates/';
-$__cfg['smarty.compile']   = $__cfg['site.main.dir'] . 'private/smartytemplates_site/templates_c/';
-$__cfg['smarty.cache']     = $__cfg['site.main.dir'] . 'private/smartytemplates_site/cache/';
+$__cfg['smarty.templates'] = $__cfg['site.main.dir'] . 'private/smartytemplates_reu10_2/templates/';
+$__cfg['smarty.compile']   = $__cfg['site.main.dir'] . 'private/smartytemplates_reu10_2/templates_c/';
+$__cfg['smarty.cache']     = $__cfg['site.main.dir'] . 'private/smartytemplates_reu10_2/cache/';
 $__cfg['smarty.compile_check'] = true;
 $__cfg['smarty.debug'] = false;
 
