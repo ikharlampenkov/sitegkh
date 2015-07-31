@@ -6,7 +6,7 @@
         <td class="centerfon"></td>
     </tr>
     <tr>
-        <td style="padding: 0px; min-height: 926px;"></td>
+        <td style="padding: 0; min-height: 926px;"></td>
     </tr>
     <tr>
         <td class="nizfonbanner"></td>
