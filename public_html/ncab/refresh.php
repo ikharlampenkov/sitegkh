@@ -43,5 +43,4 @@ if (file_exists($__cfg['site.dir'] . '/ncab/ftp/IMPORT.ZIP')) {
 }
 
 error_log('End refresh at' . date('d.m.Y H:i:s'), 3, $logFile);
-
-?>
+exit;
