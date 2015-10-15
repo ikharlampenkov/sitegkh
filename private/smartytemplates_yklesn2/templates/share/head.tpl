@@ -33,7 +33,7 @@
                             <table style="height: 80px;">
                                 <tr>
                                     <td style="text-align: left; vertical-align: middle; padding: 0px;">
-                                        <a href="/"><img src="/i_yklesn/logo.jpg" alt="Логотип" style="padding: 0px 0px 0px 50px;" border="0" /></a>
+                                        <a href="/"><img src="/i_yklesn/logo-ooo-lesnay.jpg" alt="Логотип" style="padding: 0px 0px 0px 50px;" border="0" /></a>
                                     </td>
                                     <td style="text-align: left; vertical-align: middle; padding: 0px;">
 
