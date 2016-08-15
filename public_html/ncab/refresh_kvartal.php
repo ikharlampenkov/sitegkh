@@ -38,7 +38,7 @@ error_log('Generate Kvartal ' . $__cfg['site.dir'] . '/ncab/ftp/Export_meters.ZI
 
 if (file_exists($__cfg['site.dir'] . '/' . $__cfg['ncab.path'] . '/ftp/IMPORT.ZIP')) {
     $o_cab_xml->refreshFile($__cfg['site.dir'] . '/' . $__cfg['ncab.path'] . '/ftp/IMPORT.ZIP', $__cfg['site.dir'] . '/' . $__cfg['ncab.path'] . '');
-    error_log('Inport Kvartal ' . $__cfg['site.dir'] . '/ncab/ftp/IMPORT.ZIP' . "\r\n", 3, $logFile);
+    error_log('Import Kvartal ' . $__cfg['site.dir'] . '/ncab/ftp/IMPORT.ZIP' . "\r\n", 3, $logFile);
     unlink($__cfg['site.dir'] . '/' . $__cfg['ncab.path'] . '/ftp/IMPORT.ZIP');
 }
 
