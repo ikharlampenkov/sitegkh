@@ -42,5 +42,5 @@ if (file_exists($__cfg['site.dir'] . '/' . $__cfg['ncab.path'] . '/ftp/IMPORT.ZI
     unlink($__cfg['site.dir'] . '/' . $__cfg['ncab.path'] . '/ftp/IMPORT.ZIP');
 }
 
-error_log('End refresh Kvartal at' . date('d.m.Y H:i:s') . "\r\n", 3, $logFile);
+error_log('End refresh Kvartal at ' . date('d.m.Y H:i:s') . "\r\n", 3, $logFile);
 exit;
