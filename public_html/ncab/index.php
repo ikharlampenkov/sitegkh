@@ -82,7 +82,8 @@ try {
 
     if ($page == 'debt') {
         $o_cab->loadFile($fileName);
-        $o_smarty->assign('debt', $o_cab->getBlock('dolg'));
+        $o_smarty->assign('debts', $o_cab->getBlock('dolg'));
+        $o_smarty->assign('debt_kapremonts', $o_cab->getBlock('dolg_kapremont'));
 
         $o_smarty->assign('page_ncab', 1);
     }

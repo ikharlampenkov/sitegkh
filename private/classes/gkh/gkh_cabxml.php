@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by JetBrains PhpStorm.
  * User: Administrator
@@ -68,8 +69,10 @@ class gkh_cabxml extends gkh
             if ($titile == 'jilci') {
                 $retArray = array();
                 //print_r($xmlBlock->JILCI->PROJ1);
-                foreach ($xmlBlock->JILCI->PROJ as $jilci) {
-                    $retArray[] = $jilci->attributes();
+                if (is_array($xmlBlock->JILCI->PROJ)) {
+                    foreach ($xmlBlock->JILCI->PROJ as $jilci) {
+                        $retArray[] = $jilci->attributes();
+                    }
                 }
                 return $retArray;
             }
@@ -77,6 +80,14 @@ class gkh_cabxml extends gkh
             if ($titile == 'dolg') {
                 $retArray = array();
                 foreach ($xmlBlock->DOLGI->DOLG as $dolg) {
+                    $retArray[] = $dolg->attributes();
+                }
+                return $retArray;
+            }
+
+            if ($titile == 'dolg_kapremont') {
+                $retArray = array();
+                foreach ($xmlBlock->DOLGI_KAPREMONT->DOLG as $dolg) {
                     $retArray[] = $dolg->attributes();
                 }
                 return $retArray;
