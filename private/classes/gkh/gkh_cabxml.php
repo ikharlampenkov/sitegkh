@@ -51,7 +51,7 @@ class gkh_cabxml extends gkh
 
     }
 
-    public function getBlock($titile)
+    public function getBlock($title)
     {
         //print_r($this->_xml->Item->LS['KOD']);
         //print_r($this->_xml->xpath('//LS[@KOD="' . $this->_ls . '"]'));
@@ -62,11 +62,11 @@ class gkh_cabxml extends gkh
         $xmlBlock = $this->_checkLS();
         if ($xmlBlock !== false) {
             //print_r($xmlBlock);
-            if ($titile == 'ls') {
+            if ($title == 'ls') {
                 return $xmlBlock->attributes();
             }
 
-            if ($titile == 'jilci') {
+            if ($title == 'jilci') {
                 $retArray = array();
                 //print_r($xmlBlock->JILCI->PROJ1);
                 if (is_array($xmlBlock->JILCI->PROJ)) {
@@ -77,7 +77,7 @@ class gkh_cabxml extends gkh
                 return $retArray;
             }
 
-            if ($titile == 'dolg') {
+            if ($title == 'dolg') {
                 $retArray = array();
                 foreach ($xmlBlock->DOLGI->DOLG as $dolg) {
                     $retArray[] = $dolg->attributes();
@@ -85,7 +85,7 @@ class gkh_cabxml extends gkh
                 return $retArray;
             }
 
-            if ($titile == 'dolg_kapremont') {
+            if ($title == 'dolg_kapremont') {
                 $retArray = array();
                 foreach ($xmlBlock->DOLGI_KAPREMONT->DOLG as $dolg) {
                     $retArray[] = $dolg->attributes();
@@ -93,7 +93,7 @@ class gkh_cabxml extends gkh
                 return $retArray;
             }
 
-            if ($titile == 'sch') {
+            if ($title == 'sch') {
                 $retArray = array();
                 foreach ($xmlBlock->SCH->SCH as $meters) {
                     $metersAttrib = $meters->attributes();
@@ -114,7 +114,7 @@ class gkh_cabxml extends gkh
                 return $retArray;
             }
 
-            if ($titile == 'nach') {
+            if ($title == 'nach') {
                 $retArray = array();
                 $i = 0;
                 foreach ($xmlBlock->NACH->PERIOD as $period) {
