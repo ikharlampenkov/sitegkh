@@ -20,7 +20,7 @@
 
 
 <br/><br/>
-<div class="page_title">Информация о задолженности по капетальному ремонту</div>
+<div class="page_title">Информация о задолженности по капитальному ремонту</div>
 <div class="page_title_und">&nbsp;</div>
 
 <div style="padding: 10px 0 10px 0; text-align: justify;">Если в графе "Сумма задолженности" указан минус, то это переплата.</div>
