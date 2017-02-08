@@ -33,7 +33,7 @@
 <tr>
     <td class="cab-value" style="text-align: left; font-weight: bold; padding: 5px;" colspan="11">Содержание и ремонт жилого помещения</td>
 </tr>
-{elseif $smarty.foreach._usluga.index==1}
+{elseif $smarty.foreach._usluga.index==1 || $smarty.foreach._usluga.index==8}
     <tr>
         <td class="cab-value" style="text-align: left; font-weight: bold; padding: 5px;" colspan="11">Коммунальные услуги</td>
     </tr>
