@@ -119,9 +119,21 @@ class gkh_cabxml extends gkh
                 $i = 0;
                 foreach ($xmlBlock->NACH->PERIOD as $period) {
                     $retArray[$i]['period'] = $period->attributes();
+                    $j = 0;
+                    $key = 0;
                     foreach ($period->USL as $usluga) {
-                        $retArray[$i]['usluga'][] = $usluga->attributes();
+                        echo $key . '<br/>';
+                        if ($key > 0 && $key < 8) {
+                            $j = $key + 3;
+                        } elseif ($key > 7) {
+                            $j = $key - 7;
+                        }
+                        echo $j . '<br/>';
+
+                        $retArray[$i]['usluga'][$j] = $usluga->attributes();
+                        $key++;
                     }
+                    ksort($retArray[$i]['usluga']);
                     $i++;
                 }
 

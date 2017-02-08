@@ -33,11 +33,11 @@
 <tr>
     <td class="cab-value" style="text-align: left; font-weight: bold; padding: 5px;" colspan="11">Содержание и ремонт жилого помещения</td>
 </tr>
-{elseif $smarty.foreach._usluga.index==1 || $smarty.foreach._usluga.index==8}
+{elseif ($smarty.foreach._usluga.index==4 && $usluga@total > 8) || ($smarty.foreach._usluga.index==1 && $usluga@total == 8)}
     <tr>
         <td class="cab-value" style="text-align: left; font-weight: bold; padding: 5px;" colspan="11">Коммунальные услуги</td>
     </tr>
-    {elseif $smarty.foreach._usluga.index==6}
+    {elseif ($smarty.foreach._usluga.index==9 && $usluga@total > 8) || ($smarty.foreach._usluga.index==6 && $usluga@total == 8)}
         <tr>
             <td class="cab-value" style="text-align: left; font-weight: bold; padding: 5px;" colspan="11">Прочие услуги</td>
         </tr>
