@@ -122,13 +122,13 @@ class gkh_cabxml extends gkh
                     $j = 0;
                     $key = 0;
                     foreach ($period->USL as $usluga) {
-                        echo $key . '<br/>';
+                        //echo $key . '<br/>';
                         if ($key > 0 && $key < 8) {
                             $j = $key + 3;
                         } elseif ($key > 7) {
                             $j = $key - 7;
                         }
-                        echo $j . '<br/>';
+                        //echo $j . '<br/>';
 
                         $retArray[$i]['usluga'][$j] = $usluga->attributes();
                         $key++;
