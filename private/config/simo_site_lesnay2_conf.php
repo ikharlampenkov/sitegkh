@@ -8,6 +8,9 @@
  */
 
 $__cfg['db.dsn'] = 'mysql://sibdnevnik_les2:e10adc39h@localhost:3306/sibdnevnik_les2';
+$__cfg['db.dsn_sync'] = 'mysql:host=localhost;port=3306;dbname=sibdnevnik_lesna;charset=utf8';
+$__cfg['db.dsn_sync'] = 'sibdnevnik_lesna';
+$__cfg['db.dsn_sync'] = 'e10adc39h';
 $__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = false;

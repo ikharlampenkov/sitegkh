@@ -227,7 +227,7 @@ class gkh_meters_cab extends gkh
         }
     }
 
-    public function exportMetersValue($workDir, $file, $fileArchive, $date, $today = false)
+    public function exportMetersValue($workDir, $file, $fileArchive, $date, $sync = false)
     {
         try {
             $o_cab_xml = new gkh_cabxml(0);
@@ -241,6 +241,9 @@ class gkh_meters_cab extends gkh
             $root->appendChild($xmlDoc->createElement('FromSite', date('YmdHis'))); //<FromSite>20042012112011</FromSite>
             $item = $root->appendChild($xmlDoc->createElement('Item'));
 
+            if ($sync) {
+                $this->_syncMeters($exportDate);
+            }
 
             $o_personal_account = new gkh_personal_account_site();
             $paList = $o_personal_account->getAllPA();
@@ -291,6 +294,14 @@ class gkh_meters_cab extends gkh
         parent::__destruct();
 
         unset($this->_personal_account);
+    }
+
+    private function _syncMeters($exportDate)
+    {
+        global $__cfg;
+
+
+
     }
 
 }

@@ -76,7 +76,7 @@ if ($serverName == 'xn--21-kmcm3c.xn--p1ai') {
     include_once $config_path . 'simo_site_sbor2_conf.php'; //ооо-серебряныйбор.рф
 } elseif ($serverName == 'xn---10-bed5apd3f.xn--p1ai') {
     include_once $config_path . 'simo_site_reu10_2_conf.php'; //ук-рэу10.рф
-} elseif ($serverName == 'xn----8sboxlcaa4a6l.xn--p1ai') {
+} elseif ($serverName == 'xn----8sboxlcaa4a6l.xn--p1ai' || $serverName == 'xn----8sboxlcaa4a6l') {
     include_once $config_path . 'simo_site_lesnay2_conf.php'; //ооо-лесная.рф
 } else {
     include_once $config_path . 'simo_site_conf.php';
