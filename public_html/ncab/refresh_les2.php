@@ -39,7 +39,7 @@ $date = date('Y-m-d', mktime(0, 0, 0, date('m'), 1, date('Y')));
 if (file_exists($__cfg['site.dir'] . '/ncab/ftp/IMPORT.ZIP')) {
     $o_cab_xml->refreshFile($__cfg['site.dir'] . '/ncab/ftp/IMPORT.ZIP', $__cfg['site.dir'] . '/ncab');
     error_log('Import for Lesnay2 ' . $__cfg['site.dir'] . '/ncab/ftp/IMPORT.ZIP' . "\r\n", 3, $logFile);
-    //unlink($__cfg['site.dir'] . '/ncab/ftp/IMPORT.ZIP');
+    unlink($__cfg['site.dir'] . '/ncab/ftp/IMPORT.ZIP');
 }
 
 error_log('End refresh Lesnay2 at ' . date('d.m.Y H:i:s') . "\r\n", 3, $logFile);
