@@ -300,8 +300,30 @@ class gkh_meters_cab extends gkh
     {
         global $__cfg;
 
+        $pdo = new PDO($__cfg['db.dsn_sync'], $__cfg['db.dsn_sync_user'], $__cfg['db.dsn_sync_pass']);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $isHuman = 1;
 
+        try {
+            $selectStatement = $pdo->prepare('SELECT * FROM meters_value_cab WHERE is_human=:human AND date>=:date');
+            $selectStatement->execute(array('human' => 1, 'date' => $exportDate));
+            $valueList = $selectStatement->fetchAll(PDO::FETCH_ASSOC);
 
+            foreach ($valueList as $value) {
+                $this->_personal_account = $value['personal_account_id'];
+                $sql
+                    = 'REPLACE meters_value_cab(personal_account_id, num, date, value, is_human)
+                                     VALUES(' . $this->_personal_account . ', "' . $value['num'] . '", "' . $value['date'] . '", ' . str_replace(',', '.', $value['value']) . ', ' . $isHuman . ')';
+                //print_r($sql);
+                $this->_db->query($sql);
+            }
+            $valueList = null;
+        } catch (PDOException $e) {
+            simo_exception::registrMsg($e, $this->_debug);
+            return false;
+        }
+        $pdo = null;
+        return true;
     }
 
 }
