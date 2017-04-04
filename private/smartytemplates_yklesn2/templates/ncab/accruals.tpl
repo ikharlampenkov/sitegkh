@@ -33,7 +33,7 @@
 <tr>
     <td class="cab-value" style="text-align: left; font-weight: bold; padding: 5px;" colspan="11">Содержание и ремонт жилого помещения</td>
 </tr>
-{elseif ($smarty.foreach._usluga.index==4 && $usluga@total > 8) || ($smarty.foreach._usluga.index==1 && $usluga@total == 8)}
+{elseif ($user_ls != '11010010' && $smarty.foreach._usluga.index==4 && $usluga@total > 8) || ($user_ls == '11010010' && $smarty.foreach._usluga.index==5 && $usluga@total > 8) || ($smarty.foreach._usluga.index==1 && $usluga@total == 8)}
     <tr>
         <td class="cab-value" style="text-align: left; font-weight: bold; padding: 5px;" colspan="11">Коммунальные услуги</td>
     </tr>

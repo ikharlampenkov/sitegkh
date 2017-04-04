@@ -56,6 +56,7 @@ $o_pa = new gkh_personal_account_site($management_company);
 $account_info = $o_pa->getPAByUser(share_user_site::getUserId());
 $ls = $account_info['ls'];
 
+$o_smarty->assign('user_ls', $ls);
 $o_smarty->assign('user', $account_info['fio']);
 
 $o_smarty->assign('page_ncab', 0);
