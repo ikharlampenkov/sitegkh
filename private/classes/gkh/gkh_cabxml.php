@@ -119,21 +119,27 @@ class gkh_cabxml extends gkh
                 $i = 0;
                 foreach ($xmlBlock->NACH->PERIOD as $period) {
                     $retArray[$i]['period'] = $period->attributes();
+                    $retArray[$i]['sum_tariff'] = 0;
                     $j = 0;
-                    $key = 0;
-                    foreach ($period->USL as $usluga) {
-                        //echo $key . '<br/>';
-                        if ($key > 0 && $key < 8) {
-                            $j = $key + 3;
-                        } elseif ($key > 7) {
-                            $j = $key - 7;
-                        }
-                        //echo $j . '<br/>';
 
-                        $retArray[$i]['usluga'][$j] = $usluga->attributes();
-                        $key++;
+                    foreach ($period->RAZDEL as $razdel) {
+                        $razdelAttributes = $razdel->attributes();
+                        $retArray[$i]['razdel'][$j]['name'] = $razdelAttributes['NAME'];
+
+                        foreach ($razdel->USL as $usluga) {
+                            $uslugaAttributes = $usluga->attributes();
+                            $retArray[$i]['razdel'][$j]['usluga'][] = $uslugaAttributes;
+
+                            $sum = 0;
+                            $temp = explode('|', $uslugaAttributes['SUM_TARIF']);
+                            foreach ($temp as $value) {
+                                $sum += str_replace(',', '.', $value);
+                            }
+
+                            $retArray[$i]['sum_tariff'] += $sum;
+                        }
+                        $j++;
                     }
-                    ksort($retArray[$i]['usluga']);
                     $i++;
                 }
 

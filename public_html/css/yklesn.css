@@ -11,9 +11,9 @@ body {
 table {
     width: 100%;
     height: auto;
-    margin: 0px;
-    padding: 0px;
-    border-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
 }
 
 tr {
@@ -48,21 +48,15 @@ textarea {
 
 .mainblock {
     width: 1000px;
-    padding: 0px;
+    padding: 0;
 }
 
 .border_left {
-    background-image: url(/i_yklesn/border_fon.png);
-    background-color: #f6e8b8;
-    background-position: right;
-    background-repeat: repeat-y;
+    background: #f6e8b8 url(/i_yklesn/border_fon.png) repeat-y right;
 }
 
 .border_right {
-    background-image: url(/i_yklesn/border_fon_right.png);
-    background-color: #f6e8b8;
-    background-position: left;
-    background-repeat: repeat-y;
+    background: #f6e8b8 url(/i_yklesn/border_fon_right.png) repeat-y left;
 }
 
 .rzdtitle {
@@ -77,27 +71,27 @@ textarea {
 }
 
 .inner_block {
-    padding: 30px 0px 0px 5px;
+    padding: 30px 0 0 5px;
 }
 
 .inner_block_2 {
-    padding: 1px 0px 0px 40px;
+    padding: 1px 0 0 40px;
 }
 
 .inner_block_3 {
-    padding: 1px 0px 0px 58px;
+    padding: 1px 0 0 58px;
 }
 
 .inner_block_4 {
-    padding: 15px 0px 0px 90px;
+    padding: 15px 0 0 90px;
 }
 
 .inner_block_5 {
-    padding: 15px 0px 0px 0px; 
+    padding: 15px 0 0 0;
 }
 
 .lk_block {
-    padding: 43px 0px 0px 32px;
+    padding: 43px 0 0 32px;
 }
 
 .lk_text {
@@ -149,8 +143,7 @@ textarea {
 .menu_button {
     width:142px;
     height:36px;
-    background-image: url(/i_yklesn/menu_button.png);
-    background-repeat: no-repeat;
+    background: url(/i_yklesn/menu_button.png) no-repeat;
     color: #ffffff;
     font-size: 14pt;
     text-align: center;
@@ -178,15 +171,9 @@ textarea {
 
 #nav li a {
     text-decoration: none;
-    color: white;
-    background-color: white;
     /*  background-image: url("/images/bgmn.gif") ; */
-    background-repeat: no-repeat;
-    background-position: right; 
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-top: 5px;
+    background: white no-repeat right;
+    padding: 5px 10px;
     color: #000000;
     font-size: 13px; 
     vertical-align: middle;
@@ -195,15 +182,9 @@ textarea {
 
 #nav li a:hover {
     text-decoration: none;
-    color: white;
-    background-color: white;
     /*background-image: url("/images/bgmn.gif") ; */
-    background-repeat:repeat-y;
-    background-position: right; 
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+    background: white repeat-y right;
+    padding: 5px 10px;
     color: #1b8b4c;
     font-size: 13px; 
     vertical-align: top;
@@ -227,7 +208,7 @@ textarea {
 #nav li ul {
     display: none;
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 100%;
     padding: 0; margin: 0;
 }
@@ -289,13 +270,13 @@ textarea {
     color: #ffffff;
     text-align: center;
     vertical-align: middle;
-    padding: 5px 0px;
+    padding: 5px 0;
 }
 
 .cab-value {
     border: 1px solid #66cc33;
-    color: #000000;
+    /* color: #000000; */
     text-align: center;
     vertical-align: middle;
-    padding: 5px 0px;
+    padding: 5px 0;
 }
