@@ -47,7 +47,6 @@
             <input id="save" name="save" type="submit" value="Сохранить" style="font-size: 14px;" {if $active==false}disabled="disabled"{/if}/>
         </div>
     </form>
-
     <br/>
     <div style="padding:  10px 0 10px 0; text-align: justify; font-weight: bold;">Показания индивидуальных приборов учета, которые отмечены <span style="color: #ff0000;">красным</span>, не будут приняты к учету, так как срок поверки индивидуального прибора учета истек.</div>
 {/if}
