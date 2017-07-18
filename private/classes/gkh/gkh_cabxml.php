@@ -120,6 +120,7 @@ class gkh_cabxml extends gkh
                 foreach ($xmlBlock->NACH->PERIOD as $period) {
                     $retArray[$i]['period'] = $period->attributes();
                     $retArray[$i]['sum_tariff'] = 0;
+                    $retArray[$i]['capital'] = array('attribute' => '', 'ITOGO_NACHISL' => 0, 'K_OPLATE');
                     $j = 0;
 
                     foreach ($period->RAZDEL as $razdel) {
@@ -128,15 +129,21 @@ class gkh_cabxml extends gkh
 
                         foreach ($razdel->USL as $usluga) {
                             $uslugaAttributes = $usluga->attributes();
-                            $retArray[$i]['razdel'][$j]['usluga'][] = $uslugaAttributes;
 
-                            $sum = 0;
-                            $temp = explode('|', $uslugaAttributes['SUM_TARIF']);
-                            foreach ($temp as $value) {
-                                $sum += str_replace(',', '.', $value);
+                            if ($uslugaAttributes['NAIMUSL'] != 'Взнос на капитальный ремонт') {
+                                $retArray[$i]['razdel'][$j]['usluga'][] = $uslugaAttributes;
+
+                                $sum = 0;
+                                $temp = explode('|', $uslugaAttributes['SUM_TARIF']);
+                                foreach ($temp as $value) {
+                                    $sum += str_replace(',', '.', $value);
+                                }
+                                $retArray[$i]['sum_tariff'] += $sum;
+                            } else {
+                                $retArray[$i]['capital']['attribute'] = $uslugaAttributes;
+                                $retArray[$i]['capital']['ITOGO_NACHISL'] = $uslugaAttributes['ITOGO_NACHISL'];
+                                $retArray[$i]['capital']['K_OPLATE'] = $uslugaAttributes['K_OPLATE'];
                             }
-
-                            $retArray[$i]['sum_tariff'] += $sum;
                         }
                         $j++;
                     }
