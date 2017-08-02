@@ -37,6 +37,33 @@ $o_smarty->assign('action', $action);
 
 $o_smarty->assign('domen', $_SERVER['SERVER_NAME']);
 
+if (isset($_GET['mode'])) {
+    $rawMode = $_GET['mode'];
+    if (in_array($rawMode, array('normal', 'special'))) {
+        $mode = $rawMode;
+    } else {
+        $mode = 'normal';
+    }
+
+    $_SESSION['siteMode']['mode'] = $mode;
+    header("Location: /");
+}
+
+if ($page == 'change-parameter') {
+    $type = $_GET['type'];
+    $value = $_GET['value'];
+
+    if ($type == 'color') {
+        $_SESSION['siteMode']['color'] = $value;
+    } elseif ($type == 'size') {
+        $_SESSION['siteMode']['fontSize'] = $value;
+    }
+
+    header('Content-Type: application/json');
+    echo json_encode(array('result' => 'ok'));
+    exit;
+}
+
 
 if ($o_user->isLogin()) {
     $o_smarty->assign('login', true);
@@ -312,6 +339,14 @@ if ($o_user->isLogin()) {
     }
     $o_smarty->assign('firstPage', $firstPage);
 
-    $o_smarty->display('index.tpl');
+    $o_smarty->assign('currentSiteMode', $_SESSION['siteMode']['mode']);
+    $o_smarty->assign('currentSiteColor', $_SESSION['siteMode']['color']);
+    $o_smarty->assign('currentSiteFontSize', $_SESSION['siteMode']['fontSize']);
+
+    if ($_SESSION['siteMode']['mode'] == 'normal') {
+        $o_smarty->display('index.tpl');
+    } else {
+        $o_smarty->display('index-special.tpl');
+    }
 }
 ?>

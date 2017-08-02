@@ -144,3 +144,9 @@ if (isset($__cfg['finder.path']) && !empty($__cfg['finder.path'])) {
 } else {
     $_SESSION['finder_path'] = '';
 }
+
+if (!isset($_SESSION['siteMode'])) {
+    $_SESSION['siteMode']['mode'] = 'normal';
+    $_SESSION['siteMode']['color'] = 'white';
+    $_SESSION['siteMode']['fontSize'] = 'small';
+}
