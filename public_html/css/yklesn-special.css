@@ -97,23 +97,15 @@ img {
 }
 
 .lk_text {
-    font-size: 10pt;
-    line-height: 25pt;
 }
 
 .news_date {
-    font-size: 10pt;
-    line-height: 16pt;
 }
 
 .news_title {
-    font-size: 12pt;
-    line-height: 16pt;
 }
 
 .news_text_link {
-    font-size: 10pt; 
-    line-height: 16pt;
 }
 
 .rascr_img {
@@ -122,12 +114,10 @@ img {
 }
 
 .rascr_text {
-    font-size: 10pt;
     text-align: center;
 }
 
 .faq_t {
-    font-size: 12pt;
     text-decoration: none;
 }
 
