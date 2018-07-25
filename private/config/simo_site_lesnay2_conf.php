@@ -26,7 +26,7 @@ $__cfg['smarty.cache']     = $__cfg['site.main.dir'] . 'private/smartytemplates_
 $__cfg['smarty.compile_check'] = true;
 $__cfg['smarty.debug'] = false;
 
-$__cfg['smarty.default.title'] = 'ООО «Управляющая компания Лесная Поляна».';
+$__cfg['smarty.default.title'] = 'ООО «Кедровый».';
 $__cfg['smarty.default.desc'] = '';
 $__cfg['smarty.default.keyword'] = '';
 
@@ -34,7 +34,7 @@ $__cfg['smarty.default.keyword'] = '';
 $__cfg['smarty.encoding'] = 'utf-8';
 
 $__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html';
-$__cfg['site.url'] = 'http://ооо-лесная.рф/';
+$__cfg['site.url'] = 'http://ооо-кедровый.рф/';
 
 $__cfg['temp.dir'] = $__cfg['site.main.dir'] . 'private/temp/';
 
