@@ -7,7 +7,7 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysql://sibdnevnik_reu7:e10adc39h@localhost:3306/sibdnevnik_reu7';
+$__cfg['db.dsn'] = 'mysqli://sibdnevnik_reu7:e10adc39h@localhost:3306/sibdnevnik_reu7';
 $__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = false;
@@ -31,7 +31,7 @@ $__cfg['smarty.default.keyword'] = '';
 $__cfg['smarty.encoding'] = 'utf-8';
 
 $__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public_html';
-$__cfg['site.url'] = 'http://рэу7.рф/';
+$__cfg['site.url'] = 'http://архив.рэу7.рф/';
 
 $__cfg['temp.dir'] = $__cfg['site.main.dir'] . 'private/temp/';
 

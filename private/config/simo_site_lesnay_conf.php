@@ -7,8 +7,8 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysql://sibdnevnik_lesna:e10adc39h@localhost:3306/sibdnevnik_lesna';
-$__cfg['db.dsn_sync'] = 'mysql:host=localhost;port=3306;dbname=sibdnevnik_les2;charset=utf8';
+$__cfg['db.dsn'] = 'mysqli://sibdnevnik_lesna:e10adc39h@localhost:3306/sibdnevnik_lesna';
+$__cfg['db.dsn_sync'] = 'mysqli:host=localhost;port=3306;dbname=sibdnevnik_les2;charset=utf8';
 $__cfg['db.dsn_sync_user'] = 'sibdnevnik_les2';
 $__cfg['db.dsn_sync_pass'] = 'e10adc39h';
 $__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;

@@ -7,7 +7,7 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysql://sibdnevnik_ndom:e10adc39h@localhost:3306/sibdnevnik_ndom';
+$__cfg['db.dsn'] = 'mysqli://sibdnevnik_ndom:e10adc39h@localhost:3306/sibdnevnik_ndom';
 $__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = false;
@@ -23,7 +23,7 @@ $__cfg['smarty.cache']     = $__cfg['site.main.dir'] . 'private/smartytemplates_
 $__cfg['smarty.compile_check'] = true;
 $__cfg['smarty.debug'] = false;
 
-$__cfg['smarty.default.title'] = 'ООО «Управляющая компания Наш дом».';
+$__cfg['smarty.default.title'] = 'МУП УК "Наш Дом".';
 $__cfg['smarty.default.desc'] = '';
 $__cfg['smarty.default.keyword'] = '';
 
