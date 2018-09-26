@@ -284,6 +284,7 @@ class gkh_meters_cab extends gkh
 
             return false;
         } catch (Exception $e) {
+            simo_log::logMsg($e->getMessage(), simo_log::SIMO_LOG_ERROR);
             simo_exception::registrMsg($e, $this->_debug);
             return false;
         }

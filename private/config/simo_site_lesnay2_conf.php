@@ -8,7 +8,7 @@
  */
 
 $__cfg['db.dsn'] = 'mysqli://sibdnevnik_les2:e10adc39h@localhost:3306/sibdnevnik_les2';
-$__cfg['db.dsn_sync'] = 'mysqli:host=localhost;port=3306;dbname=sibdnevnik_lesna;charset=utf8';
+$__cfg['db.dsn_sync'] = 'mysql:host=localhost;port=3306;dbname=sibdnevnik_lesna;charset=utf8';
 $__cfg['db.dsn_sync_user'] = 'sibdnevnik_lesna';
 $__cfg['db.dsn_sync_pass'] = 'e10adc39h';
 $__cfg['site.main.dir'] = PRIVATE_PATH . '/../';;
